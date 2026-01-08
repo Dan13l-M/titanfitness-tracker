@@ -1,0 +1,5 @@
+{
+  "name": "TitanFitness Tracker",
+  "description": "A comprehensive fitness tracking application featuring a customizable exercise library with visual guides, flexible routine builder (Push/Pull/Legs/etc.), and AI-powered workout suggestions.",
+  "requestFramePermissions": []
+}
