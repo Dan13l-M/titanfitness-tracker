@@ -347,6 +347,7 @@ function App() {
   const handleAddMetric = (m: BodyMetric) => setMetrics(prev => [...prev, m]);
   const handleDeleteMetric = (id: string) => setMetrics(prev => prev.filter(m => m.id !== id));
   const handleDeleteWorkout = (id: string) => setHistory(prev => prev.filter(w => w.id !== id));
+  const handleUpdateWorkout = (workout: CompletedWorkout) => setHistory(prev => prev.map(w => w.id === workout.id ? workout : w));
 
   // Chat Handlers
   const handleUpdateChats = (updatedChats: ChatSession[]) => {
@@ -445,9 +446,8 @@ function App() {
         }));
         validSets.forEach(s => {
             const w = parseFloat(s.weight);
-            const r = parseFloat(s.reps);
             const weightInKg = s.unit === 'lbs' ? w * 0.453592 : w;
-            totalVolume += (weightInKg * r);
+            totalVolume += weightInKg; // Sum weight per set, not weight x reps
         });
         let historicalMax = 0;
         history.forEach(h => {
@@ -634,7 +634,7 @@ function App() {
 
         <main className="flex-1 overflow-y-auto p-4 md:p-6 lg:p-8 pb-28 md:pb-8 relative bg-transparent">
           <div className="max-w-7xl mx-auto animate-fadeIn">
-            {currentView === 'dashboard' && <Dashboard userName={userProfile?.name || 'Atleta'} history={history} metrics={metrics} exercises={exercises} onAddMetric={handleAddMetric} onDeleteMetric={handleDeleteMetric} onDeleteWorkout={handleDeleteWorkout} unit={weightUnit} onUnitChange={setWeightUnit} />}
+            {currentView === 'dashboard' && <Dashboard userName={userProfile?.name || 'Atleta'} history={history} metrics={metrics} exercises={exercises} onAddMetric={handleAddMetric} onDeleteMetric={handleDeleteMetric} onDeleteWorkout={handleDeleteWorkout} onUpdateWorkout={handleUpdateWorkout} unit={weightUnit} onUnitChange={setWeightUnit} />}
             {currentView === 'coach' && <AiCoach userProfile={userProfile} history={history} metrics={metrics} chats={chats} onUpdateChats={handleUpdateChats} />}
             {currentView === 'exercises' && <ExerciseLibrary exercises={exercises} onAddExercise={handleAddExercise} onUpdateExercise={handleUpdateExercise} onDeleteExercise={handleDeleteExercise} history={history} />}
             {currentView === 'routines' && <RoutineBuilder routines={routines} exercises={exercises} onAddRoutine={handleAddRoutine} onUpdateRoutine={handleUpdateRoutine} onDeleteRoutine={handleDeleteRoutine} onSelectSubRoutineForWorkout={startWorkout} />}
