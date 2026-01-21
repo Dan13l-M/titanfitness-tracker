@@ -3,13 +3,15 @@ import React, { useState, useRef } from 'react';
 import ReactDOM from 'react-dom';
 import { Exercise, CompletedWorkout } from '../types';
 import { generateAIExerciseDescription } from '../services/geminiService';
+import { uploadExerciseImage, deleteExerciseImage } from '../services/supabaseService';
 
 interface ExerciseLibraryProps {
   exercises: Exercise[];
-  history: CompletedWorkout[]; // Added history prop for analytics
+  history: CompletedWorkout[];
   onAddExercise: (ex: Exercise) => void;
   onUpdateExercise: (ex: Exercise) => void;
   onDeleteExercise: (id: string) => void;
+  userId?: string; // For Supabase Storage uploads
 }
 
 const MUSCLE_GROUPS = [
@@ -72,7 +74,7 @@ const DEFAULT_EXERCISE_IDS = [
   'ex_core_1', 'ex_core_2', 'ex_full_1', 'ex_cardio_1'
 ];
 
-const ExerciseLibrary: React.FC<ExerciseLibraryProps> = ({ exercises, history, onAddExercise, onUpdateExercise, onDeleteExercise }) => {
+const ExerciseLibrary: React.FC<ExerciseLibraryProps> = ({ exercises, history, onAddExercise, onUpdateExercise, onDeleteExercise, userId }) => {
   const isCustomExercise = (id: string) => !id.startsWith('ex_');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedExercise, setSelectedExercise] = useState<Exercise | null>(null);
@@ -85,9 +87,11 @@ const ExerciseLibrary: React.FC<ExerciseLibraryProps> = ({ exercises, history, o
   const [newExerciseMuscles, setNewExerciseMuscles] = useState<string[]>([]); // Array state
   const [newExerciseDesc, setNewExerciseDesc] = useState('');
   const [newExerciseEquipment, setNewExerciseEquipment] = useState('Peso corporal');
-  const [mediaFile, setMediaFile] = useState<string | null>(null);
+  const [mediaFile, setMediaFile] = useState<string | null>(null); // Preview (base64 or URL)
+  const [pendingFile, setPendingFile] = useState<File | null>(null); // Actual file to upload
   const [mediaType, setMediaType] = useState<'image' | 'video'>('image');
   const [isGenerating, setIsGenerating] = useState(false);
+  const [isUploading, setIsUploading] = useState(false);
 
   const fileInputRef = useRef<HTMLInputElement>(null);
 
@@ -98,10 +102,14 @@ const ExerciseLibrary: React.FC<ExerciseLibraryProps> = ({ exercises, history, o
         alert("El archivo es demasiado grande. Máximo 5MB.");
         return;
       }
+      // Store the file for later upload
+      setPendingFile(file);
+      setMediaType(file.type.startsWith('video') ? 'video' : 'image');
+      
+      // Create preview
       const reader = new FileReader();
       reader.onloadend = () => {
         setMediaFile(reader.result as string);
-        setMediaType(file.type.startsWith('video') ? 'video' : 'image');
       };
       reader.readAsDataURL(file);
     }
@@ -139,11 +147,40 @@ const ExerciseLibrary: React.FC<ExerciseLibraryProps> = ({ exercises, history, o
     setSelectedExercise(ex);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!newExerciseName || newExerciseMuscles.length === 0) {
         alert("Debes poner un nombre y seleccionar al menos un músculo.");
         return;
+    }
+
+    let finalMediaUrl = mediaFile;
+    
+    // If there's a new file to upload and user is logged in
+    if (pendingFile && userId) {
+      setIsUploading(true);
+      try {
+        // Delete old image if updating an exercise with existing cloud image
+        if (editingExerciseId) {
+          const oldExercise = exercises.find(ex => ex.id === editingExerciseId);
+          if (oldExercise?.mediaUrl && oldExercise.mediaUrl.includes('supabase')) {
+            try {
+              await deleteExerciseImage(oldExercise.mediaUrl);
+            } catch (err) {
+              console.error('Error deleting old image:', err);
+            }
+          }
+        }
+        
+        // Upload new image
+        finalMediaUrl = await uploadExerciseImage(userId, pendingFile);
+      } catch (err) {
+        console.error('Error uploading image:', err);
+        alert('Error al subir la imagen. Se guardará sin imagen.');
+        finalMediaUrl = undefined;
+      } finally {
+        setIsUploading(false);
+      }
     }
 
     const exerciseData: Exercise = {
@@ -152,7 +189,7 @@ const ExerciseLibrary: React.FC<ExerciseLibraryProps> = ({ exercises, history, o
       muscleGroups: newExerciseMuscles,
       equipment: newExerciseEquipment,
       description: newExerciseDesc,
-      mediaUrl: mediaFile || undefined,
+      mediaUrl: finalMediaUrl || undefined,
       mediaType: mediaType
     };
 
@@ -173,6 +210,7 @@ const ExerciseLibrary: React.FC<ExerciseLibraryProps> = ({ exercises, history, o
     setNewExerciseDesc('');
     setNewExerciseEquipment('Peso corporal');
     setMediaFile(null);
+    setPendingFile(null);
     if (fileInputRef.current) fileInputRef.current.value = '';
   };
 
@@ -495,9 +533,17 @@ const ExerciseLibrary: React.FC<ExerciseLibraryProps> = ({ exercises, history, o
                 </button>
                 <button 
                   type="submit" 
-                  className="btn-primary flex-1 py-3 rounded-xl font-bold"
+                  disabled={isUploading}
+                  className="btn-primary flex-1 py-3 rounded-xl font-bold disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                 >
-                  {editingExerciseId ? 'Actualizar' : 'Guardar'}
+                  {isUploading ? (
+                    <>
+                      <span className="w-4 h-4 border-2 border-[var(--color-bg)] border-t-transparent rounded-full animate-spin"></span>
+                      Subiendo...
+                    </>
+                  ) : (
+                    editingExerciseId ? 'Actualizar' : 'Guardar'
+                  )}
                 </button>
               </div>
             </form>

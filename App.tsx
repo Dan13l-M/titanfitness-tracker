@@ -675,7 +675,7 @@ function App() {
           <div className="max-w-7xl mx-auto animate-fadeIn">
             {currentView === 'dashboard' && <Dashboard userName={userProfile?.name || 'Atleta'} history={history} metrics={metrics} exercises={exercises} onAddMetric={handleAddMetric} onDeleteMetric={handleDeleteMetric} onDeleteWorkout={handleDeleteWorkout} onUpdateWorkout={handleUpdateWorkout} unit={weightUnit} onUnitChange={setWeightUnit} />}
             {currentView === 'coach' && <AiCoach userProfile={userProfile} history={history} metrics={metrics} chats={chats} onUpdateChats={handleUpdateChats} />}
-            {currentView === 'exercises' && <ExerciseLibrary exercises={exercises} onAddExercise={handleAddExercise} onUpdateExercise={handleUpdateExercise} onDeleteExercise={handleDeleteExercise} history={history} />}
+            {currentView === 'exercises' && <ExerciseLibrary exercises={exercises} onAddExercise={handleAddExercise} onUpdateExercise={handleUpdateExercise} onDeleteExercise={handleDeleteExercise} history={history} userId={session?.id} />}
             {currentView === 'routines' && <RoutineBuilder routines={routines} exercises={exercises} onAddRoutine={handleAddRoutine} onUpdateRoutine={handleUpdateRoutine} onDeleteRoutine={handleDeleteRoutine} onSelectSubRoutineForWorkout={startWorkout} />}
             {currentView === 'settings' && <Settings userName={userProfile?.name || 'Atleta'} onUpdateName={(name) => setUserProfile(prev => prev ? {...prev, name} : {name} as UserProfile)} onExportData={handleExportData} onImportData={handleImportData} onResetData={handleResetData} onDeleteAccount={handleDeleteAccount} isLoggedIn={!!session} theme={theme} onThemeChange={setTheme} />}
             {currentView === 'active-workout' && activeSession && (
