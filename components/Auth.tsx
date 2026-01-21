@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { 
-  isFirebaseConfigured, 
-  firebaseSignIn, 
-  firebaseSignUp, 
-  firebaseResetPassword 
-} from '../services/firebaseService';
+  isSupabaseConfigured, 
+  supabaseSignIn, 
+  supabaseSignUp, 
+  supabaseResetPassword 
+} from '../services/supabaseService';
+
 
 interface AuthProps {
   onLoginSuccess: (user: any) => void;
@@ -25,25 +26,26 @@ const Auth: React.FC<AuthProps> = ({ onLoginSuccess, onGuestMode }) => {
     setError(null);
     setSuccessMsg(null);
 
-    if (!isFirebaseConfigured()) {
-        setError("Firebase no está configurado. Revisa las variables de entorno.");
+    if (!isSupabaseConfigured()) {
+        setError("Supabase no está configurado. Revisa las variables de entorno.");
         setLoading(false);
         return;
     }
 
     try {
       if (view === 'login') {
-        const result = await firebaseSignIn(email, password);
+        const result = await supabaseSignIn(email, password);
         if (result.user) {
           onLoginSuccess(result.user);
         }
       } else if (view === 'signup') {
-        const result = await firebaseSignUp(email, password);
+        const result = await supabaseSignUp(email, password);
         if (result.user) {
-          onLoginSuccess(result.user);
+          // Show verification screen instead of auto-login
+          setView('verify');
         }
       } else if (view === 'forgot') {
-        await firebaseResetPassword(email);
+        await supabaseResetPassword(email);
         setSuccessMsg("¡Enlace enviado! Revisa tu correo para restablecer la contraseña.");
       }
 

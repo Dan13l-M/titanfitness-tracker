@@ -441,19 +441,22 @@ const Dashboard: React.FC<DashboardProps> = ({ userName, history, metrics, exerc
 
       {/* Workout Detail Modal */}
       {selectedWorkout && (
-        <div className="fixed inset-0 bg-black/70 backdrop-blur-lg z-50 flex items-center justify-center p-4 sm:p-6 md:p-8 animate-fadeIn" onClick={() => setSelectedWorkout(null)}>
-          <div className="bg-surface rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl border border-theme" onClick={e => e.stopPropagation()}>
+        <div className="fixed inset-0 bg-black/70 backdrop-blur-lg z-50 flex items-start justify-center pt-8 pb-4 px-4 sm:pt-12 sm:px-6 md:pt-16 md:px-8 overflow-y-auto animate-fadeIn" onClick={() => setSelectedWorkout(null)}>
+          <div 
+            className="bg-surface rounded-2xl w-full max-w-2xl max-h-[90vh] shadow-2xl border border-theme flex flex-col" 
+            onClick={e => e.stopPropagation()}
+          >
             
-            {/* Header */}
-            <div className="sticky top-0 bg-surface p-6 border-b border-theme z-10">
-              <div className="flex justify-between items-start">
-                <div>
-                  <h3 className="text-2xl font-black tracking-tight">{selectedWorkout.subRoutineName}</h3>
-                  <p className="text-muted text-sm mt-1">{selectedWorkout.programName}</p>
-                  <p className="text-xs text-muted/70 mt-0.5">{new Date(selectedWorkout.date).toLocaleDateString(undefined, {weekday:'long', day:'numeric', month:'long', year:'numeric'})}</p>
+            {/* Header - Fixed at top */}
+            <div className="shrink-0 p-6 border-b border-theme bg-surface rounded-t-2xl">
+              <div className="flex justify-between items-start gap-4">
+                <div className="flex-1">
+                  <h3 className="text-xl font-black text-white">{selectedWorkout.subRoutineName}</h3>
+                  <p className="text-sm mt-1 text-gray-400">{selectedWorkout.programName}</p>
+                  <p className="text-xs mt-0.5 text-gray-500">{new Date(selectedWorkout.date).toLocaleDateString(undefined, {weekday:'long', day:'numeric', month:'long', year:'numeric'})}</p>
                 </div>
-                <button onClick={() => setSelectedWorkout(null)} className="p-2 bg-white/10 hover:bg-white/20 rounded-full transition">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
+                <button onClick={() => setSelectedWorkout(null)} className="p-2 bg-white/10 hover:bg-white/20 rounded-full transition shrink-0">
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
                 </button>
               </div>
               
@@ -495,8 +498,8 @@ const Dashboard: React.FC<DashboardProps> = ({ userName, history, metrics, exerc
               </div>
             </div>
 
-            {/* Stats Cards */}
-            <div className="bg-surface px-6 py-4 grid grid-cols-3 gap-3 border-b border-theme">
+            {/* Stats Cards - Fixed */}
+            <div className="shrink-0 bg-surface px-6 py-4 grid grid-cols-3 gap-3 border-b border-theme">
               <div className="bg-white/5 rounded-xl p-3 text-center">
                 <div className="text-2xl font-black text-primary">{selectedWorkout.durationMinutes}</div>
                 <div className="text-[10px] text-muted uppercase tracking-widest font-bold">Minutos</div>
@@ -520,8 +523,8 @@ const Dashboard: React.FC<DashboardProps> = ({ userName, history, metrics, exerc
               </div>
             </div>
 
-            {/* Exercise Details */}
-            <div className="p-4 space-y-4">
+            {/* Exercise Details - Scrollable */}
+            <div className="p-4 space-y-4 overflow-y-auto flex-1">
               {editedDetails.length > 0 ? editedDetails.map((log, logIdx) => {
                 const exercise = exercises.find(e => e.id === log.exerciseId);
                 return (

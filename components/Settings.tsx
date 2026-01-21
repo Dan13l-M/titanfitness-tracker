@@ -8,6 +8,8 @@ interface SettingsProps {
   onExportData: () => void;
   onImportData: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onResetData: () => void;
+  onDeleteAccount?: () => void;
+  isLoggedIn: boolean;
   theme: Theme;
   onThemeChange: (theme: Theme) => void;
 }
@@ -18,6 +20,8 @@ const Settings: React.FC<SettingsProps> = ({
   onExportData, 
   onImportData, 
   onResetData,
+  onDeleteAccount,
+  isLoggedIn,
   theme,
   onThemeChange
 }) => {
@@ -157,6 +161,16 @@ const Settings: React.FC<SettingsProps> = ({
             >
                 Borrar Todos los Datos
             </button>
+            
+            {isLoggedIn && onDeleteAccount && (
+              <button 
+                onClick={onDeleteAccount}
+                className="bg-red-600/10 hover:bg-red-600/30 text-red-500 border border-red-600/30 px-5 py-3 rounded-xl font-bold transition-all hover:shadow-[0_0_15px_rgba(220,38,38,0.3)] relative z-10 flex items-center gap-2"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg>
+                Eliminar Cuenta Permanentemente
+              </button>
+            )}
         </div>
       </div>
       

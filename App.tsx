@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
-import { onFirebaseAuthStateChanged, firebaseSignOut, saveUserData, loadUserData, isFirebaseConfigured } from './services/firebaseService';
+import { onSupabaseAuthStateChanged, supabaseSignOut, saveUserData, loadUserData, isSupabaseConfigured, deleteAccount } from './services/supabaseService';
 import Auth from './components/Auth';
 import Onboarding from './components/Onboarding';
 import { ViewState, Exercise, Routine, ActiveWorkoutSession, SubRoutine, CompletedWorkout, BodyMetric, ExerciseLog, TrainingMode, UserProfile, ChatSession } from './types';
@@ -175,24 +175,24 @@ function App() {
   useEffect(() => {
     let authStateReceived = false;
     
-    // Timeout fallback in case Firebase auth state change never fires
+    // Timeout fallback in case Supabase auth state change never fires
     const timeout = setTimeout(() => {
       if (!authStateReceived) {
-        console.warn('Firebase auth state timeout - falling back to local mode');
+        console.warn('Supabase auth state timeout - falling back to local mode');
         setSession(null);
         setAuthView(true);
         loadLocalData();
       }
     }, 5000); // 5 second timeout
     
-    const unsubscribe = onFirebaseAuthStateChanged((user) => {
+    const unsubscribe = onSupabaseAuthStateChanged((user) => {
       authStateReceived = true;
       clearTimeout(timeout);
       
       if (user) {
         setSession(user);
         setAuthView(false);
-        loadCloudData(user.uid);
+        loadCloudData(user.id);
       } else {
         // Not logged in - show auth screen if Firebase is configured, else load local
         setSession(null);
@@ -208,9 +208,9 @@ function App() {
   }, []);
 
   const saveToCloud = useCallback(async (key: string, value: any) => {
-     if (!session?.uid) return;
+     if (!session?.id) return;
      try {
-         await saveUserData(session.uid, key, value);
+         await saveUserData(session.id, key, value);
      } catch (err) {
          console.error(`Error saving ${key} to cloud`, err);
      }
@@ -259,7 +259,7 @@ function App() {
 
   const handleLogout = async () => {
     try {
-      await firebaseSignOut();
+      await supabaseSignOut();
     } catch (e) {
       console.error('Logout error:', e);
     }
@@ -271,6 +271,45 @@ function App() {
     setChats([]);
     setActiveSession(null);
     setUserProfile(null);
+  };
+
+  const handleDeleteAccount = async () => {
+    if (!session?.id) return;
+    const confirmed = window.confirm(
+      "⚠️ ADVERTENCIA: Esta acción es IRREVERSIBLE.\n\n" +
+      "Se eliminarán permanentemente:\n" +
+      "• Todos tus programas de entrenamiento\n" +
+      "• Tu historial completo\n" +
+      "• Tus métricas corporales\n" +
+      "• Tus ejercicios personalizados\n" +
+      "• Tu cuenta de usuario\n\n" +
+      "¿Estás absolutamente seguro?"
+    );
+    if (!confirmed) return;
+    
+    const doubleConfirm = window.confirm(
+      "¿Realmente quieres eliminar tu cuenta?\n\n" +
+      "Escribe 'ELIMINAR' mentalmente y confirma si estás seguro."
+    );
+    if (!doubleConfirm) return;
+
+    try {
+      await deleteAccount(session.id);
+      setSession(null);
+      setAuthView(true);
+      setExercises(INITIAL_EXERCISES);
+      setRoutines(INITIAL_ROUTINES);
+      setHistory([]);
+      setMetrics([]);
+      setChats([]);
+      setActiveSession(null);
+      setUserProfile(null);
+      localStorage.clear();
+      alert("✅ Tu cuenta y todos tus datos han sido eliminados.");
+    } catch (error) {
+      console.error('Error deleting account:', error);
+      alert("Error al eliminar la cuenta. Por favor inténtalo de nuevo.");
+    }
   };
 
   const handleProfileComplete = (profile: UserProfile) => {
@@ -638,7 +677,7 @@ function App() {
             {currentView === 'coach' && <AiCoach userProfile={userProfile} history={history} metrics={metrics} chats={chats} onUpdateChats={handleUpdateChats} />}
             {currentView === 'exercises' && <ExerciseLibrary exercises={exercises} onAddExercise={handleAddExercise} onUpdateExercise={handleUpdateExercise} onDeleteExercise={handleDeleteExercise} history={history} />}
             {currentView === 'routines' && <RoutineBuilder routines={routines} exercises={exercises} onAddRoutine={handleAddRoutine} onUpdateRoutine={handleUpdateRoutine} onDeleteRoutine={handleDeleteRoutine} onSelectSubRoutineForWorkout={startWorkout} />}
-            {currentView === 'settings' && <Settings userName={userProfile?.name || 'Atleta'} onUpdateName={(name) => setUserProfile(prev => prev ? {...prev, name} : {name} as UserProfile)} onExportData={handleExportData} onImportData={handleImportData} onResetData={handleResetData} theme={theme} onThemeChange={setTheme} />}
+            {currentView === 'settings' && <Settings userName={userProfile?.name || 'Atleta'} onUpdateName={(name) => setUserProfile(prev => prev ? {...prev, name} : {name} as UserProfile)} onExportData={handleExportData} onImportData={handleImportData} onResetData={handleResetData} onDeleteAccount={handleDeleteAccount} isLoggedIn={!!session} theme={theme} onThemeChange={setTheme} />}
             {currentView === 'active-workout' && activeSession && (
                 <div className="max-w-3xl mx-auto space-y-5">
                 {/* Workout Header */}

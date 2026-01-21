@@ -12,7 +12,7 @@
   <img src="https://img.shields.io/badge/React-19.0-61DAFB?logo=react&logoColor=white" alt="React">
   <img src="https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white" alt="TypeScript">
   <img src="https://img.shields.io/badge/Vite-6.x-646CFF?logo=vite&logoColor=white" alt="Vite">
-  <img src="https://img.shields.io/badge/Firebase-10.x-FFCA28?logo=firebase&logoColor=black" alt="Firebase">
+  <img src="https://img.shields.io/badge/Supabase-2.x-3FCF8E?logo=supabase&logoColor=white" alt="Supabase">
   <img src="https://img.shields.io/badge/Gemini_AI-2.5-4285F4?logo=google&logoColor=white" alt="Gemini AI">
 </p>
 
@@ -34,7 +34,7 @@
 | 🤖 **Titan Coach (IA)**         | Asistente inteligente powered by Gemini AI para consejos personalizados               |
 | ⏱️ **Temporizador de Descanso** | Timer integrado con alertas para optimizar tus pausas                                 |
 | 🔢 **Calculadora de Discos**    | Calcula la distribución de placas en tu barra (kg/lbs)                                |
-| ☁️ **Sincronización Cloud**     | Guarda tu progreso en Firebase y accede desde cualquier dispositivo                   |
+| ☁️ **Sincronización Cloud**     | Guarda tu progreso en Supabase y accede desde cualquier dispositivo                   |
 | 🌓 **Modo Claro/Oscuro**        | Interfaz adaptable a tus preferencias visuales                                        |
 | 📱 **PWA Instalable**           | Instala como app nativa en móvil o escritorio                                         |
 
@@ -70,7 +70,7 @@
 ```
 Frontend:     React 19 + TypeScript + Vite
 Estilos:      CSS Variables + Design System personalizado
-Backend:      Firebase (Authentication + Firestore)
+Backend:      Supabase (Auth + Database + Storage)
 IA:           Google Gemini 2.5 Flash
 PWA:          Service Workers + Web Manifest
 ```
@@ -83,7 +83,7 @@ PWA:          Service Workers + Web Manifest
 
 - Node.js v18 o superior
 - npm o yarn
-- Cuenta de Firebase (opcional, para sincronización)
+- Cuenta de Supabase (opcional, para sincronización)
 - API Key de Gemini (opcional, para IA)
 
 ### Pasos
@@ -110,14 +110,10 @@ PWA:          Service Workers + Web Manifest
    Edita `.env.local` con tus credenciales:
 
    ```env
-   GEMINI_API_KEY=tu_api_key_de_gemini
+   VITE_GEMINI_API_KEY=tu_api_key_de_gemini
 
-   VITE_FIREBASE_API_KEY=tu_firebase_api_key
-   VITE_FIREBASE_AUTH_DOMAIN=tu_proyecto.firebaseapp.com
-   VITE_FIREBASE_PROJECT_ID=tu_proyecto
-   VITE_FIREBASE_STORAGE_BUCKET=tu_proyecto.appspot.com
-   VITE_FIREBASE_MESSAGING_SENDER_ID=123456789
-   VITE_FIREBASE_APP_ID=1:123456789:web:abc123
+   VITE_SUPABASE_URL=https://tu-proyecto.supabase.co
+   VITE_SUPABASE_ANON_KEY=tu_anon_key
    ```
 
 4. **Ejecutar en desarrollo**
@@ -145,7 +141,7 @@ titanfitness-tracker/
 │   ├── RestTimer.tsx    # Temporizador de descanso
 │   └── ...
 ├── services/            # Servicios externos
-│   ├── firebaseService.ts   # Configuración Firebase
+│   ├── supabaseService.ts   # Configuración Supabase
 │   └── geminiService.ts     # Integración Gemini AI
 ├── screenshots/         # Capturas para README
 ├── App.tsx              # Componente principal
@@ -160,7 +156,8 @@ titanfitness-tracker/
 ## 🔒 Seguridad
 
 - ✅ Las credenciales sensibles se almacenan en `.env.local` (excluido de git)
-- ✅ Firebase Authentication para manejo seguro de sesiones
+- ✅ Supabase Auth para manejo seguro de sesiones
+- ✅ Row Level Security (RLS) para proteger datos de usuario
 - ✅ Datos del usuario encriptados en tránsito
 - ✅ Modo invitado disponible (datos locales sin cloud)
 
