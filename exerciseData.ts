@@ -1,5 +1,5 @@
 // Auto-generated from enciclopedia_ejercicios_completa.csv
-// Total: 496 exercises
+// Total: 551 exercises
 
 import { Exercise } from './types';
 
@@ -571,8 +571,505 @@ export const EXERCISE_DATABASE: Exercise[] = [
     subtype: 'Reverse hyper',
     description: 'Glúteo + lumbar',
   },
+  // ========== PECHO (55 ejercicios) ==========
   {
     id: 'ex_064',
+    name: 'Push-up',
+    muscleGroups: ['Pecho'],
+    equipment: 'Peso corporal',
+    pattern: 'Empuje horizontal',
+    subtype: 'Suelo',
+    description: 'Clásico; medio/inferior según ángulo',
+  },
+  {
+    id: 'ex_065',
+    name: 'Wide-grip push-up',
+    muscleGroups: ['Pecho'],
+    equipment: 'Peso corporal',
+    pattern: 'Empuje horizontal',
+    subtype: 'Suelo',
+    description: 'Más pectoral, menos tríceps',
+  },
+  {
+    id: 'ex_066',
+    name: 'Diamond push-up',
+    muscleGroups: ['Pecho'],
+    equipment: 'Peso corporal',
+    pattern: 'Empuje horizontal',
+    subtype: 'Suelo',
+    description: 'Mucho tríceps, pero sigue cargando pecho',
+  },
+  {
+    id: 'ex_067',
+    name: 'Incline push-up',
+    muscleGroups: ['Pecho'],
+    equipment: 'Peso corporal',
+    pattern: 'Empuje horizontal',
+    subtype: 'Manos en banco/step',
+    description: 'Más énfasis en parte inferior',
+  },
+  {
+    id: 'ex_068',
+    name: 'Decline push-up',
+    muscleGroups: ['Pecho'],
+    equipment: 'Peso corporal',
+    pattern: 'Empuje horizontal',
+    subtype: 'Pies en banco',
+    description: 'Más énfasis parte superior/clave clavicular',
+  },
+  {
+    id: 'ex_069',
+    name: 'Archer push-up',
+    muscleGroups: ['Pecho'],
+    equipment: 'Peso corporal',
+    pattern: 'Empuje unilateral',
+    subtype: 'Suelo',
+    description: 'Un brazo trabaja más; mayor carga lateral',
+  },
+  {
+    id: 'ex_070',
+    name: 'Pseudo planche push-up',
+    muscleGroups: ['Pecho'],
+    equipment: 'Peso corporal',
+    pattern: 'Empuje horizontal',
+    subtype: 'Suelo',
+    description: 'Mucho deltoide anterior y pecho',
+  },
+  {
+    id: 'ex_071',
+    name: 'Ring push-up',
+    muscleGroups: ['Pecho'],
+    equipment: 'Peso corporal',
+    pattern: 'Empuje horizontal',
+    subtype: 'Anillas',
+    description: 'Inestable, alta activación',
+  },
+  {
+    id: 'ex_072',
+    name: 'Ring fly',
+    muscleGroups: ['Pecho'],
+    equipment: 'Peso corporal',
+    pattern: 'Apertura horizontal',
+    subtype: 'Anillas',
+    description: 'Fly con peso corporal, muy avanzado',
+  },
+  {
+    id: 'ex_073',
+    name: 'Seal push-up',
+    muscleGroups: ['Pecho'],
+    equipment: 'Peso corporal',
+    pattern: 'Empuje horizontal',
+    subtype: 'Manos elevadas',
+    description: 'Mayor ROM en la parte baja',
+  },
+  {
+    id: 'ex_074',
+    name: 'Chest dip',
+    muscleGroups: ['Pecho'],
+    equipment: 'Peso corporal',
+    pattern: 'Empuje vertical / diagonal',
+    subtype: 'Barras paralelas',
+    description: 'Inclinando torso adelante, énfasis pectoral inferior',
+  },
+  {
+    id: 'ex_075',
+    name: 'Weighted chest dip',
+    muscleGroups: ['Pecho'],
+    equipment: 'Peso corporal + lastre',
+    pattern: 'Empuje vertical / diagonal',
+    subtype: 'Barras paralelas',
+    description: 'Igual que chest dip con carga',
+  },
+  {
+    id: 'ex_076',
+    name: 'Ring dip (pecho)',
+    muscleGroups: ['Pecho'],
+    equipment: 'Peso corporal',
+    pattern: 'Empuje vertical / diagonal',
+    subtype: 'Anillas',
+    description: 'Inestable, gran estímulo pectoral',
+  },
+  {
+    id: 'ex_077',
+    name: 'Bench press (flat)',
+    muscleGroups: ['Pecho'],
+    equipment: 'Barra',
+    pattern: 'Empuje horizontal',
+    subtype: 'Banco plano',
+    description: 'Pectoral esternal (medio/inferior)',
+  },
+  {
+    id: 'ex_078',
+    name: 'Close-grip bench press',
+    muscleGroups: ['Pecho'],
+    equipment: 'Barra',
+    pattern: 'Empuje horizontal',
+    subtype: 'Banco plano',
+    description: 'Menos pecho, más tríceps, pero press pecho',
+  },
+  {
+    id: 'ex_079',
+    name: 'Wide-grip bench press',
+    muscleGroups: ['Pecho'],
+    equipment: 'Barra',
+    pattern: 'Empuje horizontal',
+    subtype: 'Banco plano',
+    description: 'Mayor estiramiento y foco en pecho',
+  },
+  {
+    id: 'ex_080',
+    name: 'Pause bench press',
+    muscleGroups: ['Pecho'],
+    equipment: 'Barra',
+    pattern: 'Empuje horizontal',
+    subtype: 'Banco plano',
+    description: 'Pausa en pecho, más control/tensión',
+  },
+  {
+    id: 'ex_081',
+    name: 'Incline bench press',
+    muscleGroups: ['Pecho'],
+    equipment: 'Barra',
+    pattern: 'Empuje horizontal inclinado',
+    subtype: 'Banco inclinado',
+    description: 'Énfasis pectoral superior (clavicular)',
+  },
+  {
+    id: 'ex_082',
+    name: 'Low-incline bench press',
+    muscleGroups: ['Pecho'],
+    equipment: 'Barra',
+    pattern: 'Empuje horizontal inclinado',
+    subtype: 'Banco ligeramente inclinado',
+    description: 'Compromiso entre superior y medio',
+  },
+  {
+    id: 'ex_083',
+    name: 'Decline bench press',
+    muscleGroups: ['Pecho'],
+    equipment: 'Barra',
+    pattern: 'Empuje horizontal declinado',
+    subtype: 'Banco declinado',
+    description: 'Más pectoral inferior',
+  },
+  {
+    id: 'ex_084',
+    name: 'Guillotine bench press',
+    muscleGroups: ['Pecho'],
+    equipment: 'Barra',
+    pattern: 'Empuje horizontal',
+    subtype: 'Banco plano',
+    description: 'Foco fuerte en porción superior; cuidado con hombro',
+  },
+  {
+    id: 'ex_085',
+    name: 'Reverse-grip bench press',
+    muscleGroups: ['Pecho'],
+    equipment: 'Barra',
+    pattern: 'Empuje horizontal',
+    subtype: 'Banco plano',
+    description: 'Más énfasis en pecho superior',
+  },
+  {
+    id: 'ex_086',
+    name: 'Floor press (pecho)',
+    muscleGroups: ['Pecho'],
+    equipment: 'Barra',
+    pattern: 'Empuje horizontal parcial',
+    subtype: 'Suelo',
+    description: 'ROM reducido, foco mitad superior del movimiento',
+  },
+  {
+    id: 'ex_087',
+    name: 'Smith machine bench press (flat)',
+    muscleGroups: ['Pecho'],
+    equipment: 'Barra Smith',
+    pattern: 'Empuje horizontal',
+    subtype: 'Banco plano',
+    description: 'Trayectoria guiada',
+  },
+  {
+    id: 'ex_088',
+    name: 'Smith incline bench press',
+    muscleGroups: ['Pecho'],
+    equipment: 'Barra Smith',
+    pattern: 'Empuje horizontal inclinado',
+    subtype: 'Banco inclinado',
+    description: 'Upper chest controlado',
+  },
+  {
+    id: 'ex_089',
+    name: 'Smith decline bench press',
+    muscleGroups: ['Pecho'],
+    equipment: 'Barra Smith',
+    pattern: 'Empuje horizontal declinado',
+    subtype: 'Banco declinado',
+    description: 'Lower chest guiado',
+  },
+  {
+    id: 'ex_090',
+    name: 'DB bench press (flat)',
+    muscleGroups: ['Pecho'],
+    equipment: 'Mancuernas',
+    pattern: 'Empuje horizontal',
+    subtype: 'Banco plano',
+    description: 'Mayor rango que barra',
+  },
+  {
+    id: 'ex_091',
+    name: 'DB bench press (neutral grip)',
+    muscleGroups: ['Pecho'],
+    equipment: 'Mancuernas',
+    pattern: 'Empuje horizontal',
+    subtype: 'Banco plano',
+    description: 'Menos estrés hombro, buen pecho',
+  },
+  {
+    id: 'ex_092',
+    name: 'DB incline bench press',
+    muscleGroups: ['Pecho'],
+    equipment: 'Mancuernas',
+    pattern: 'Empuje horizontal inclinado',
+    subtype: 'Banco inclinado',
+    description: 'Pectoral superior',
+  },
+  {
+    id: 'ex_093',
+    name: 'DB low-incline press',
+    muscleGroups: ['Pecho'],
+    equipment: 'Mancuernas',
+    pattern: 'Empuje horizontal inclinado',
+    subtype: 'Banco ligeramente inclinado',
+    description: 'Punto medio hombro/pecho',
+  },
+  {
+    id: 'ex_094',
+    name: 'DB decline bench press',
+    muscleGroups: ['Pecho'],
+    equipment: 'Mancuernas',
+    pattern: 'Empuje horizontal declinado',
+    subtype: 'Banco declinado',
+    description: 'Más bajo/medio/inferior',
+  },
+  {
+    id: 'ex_095',
+    name: 'DB floor press',
+    muscleGroups: ['Pecho'],
+    equipment: 'Mancuernas',
+    pattern: 'Empuje horizontal parcial',
+    subtype: 'Suelo',
+    description: 'ROM reducido, seguro sin rack',
+  },
+  {
+    id: 'ex_096',
+    name: 'DB fly (flat)',
+    muscleGroups: ['Pecho'],
+    equipment: 'Mancuernas',
+    pattern: 'Apertura horizontal',
+    subtype: 'Banco plano',
+    description: 'Estiramiento pec esternal',
+  },
+  {
+    id: 'ex_097',
+    name: 'DB incline fly',
+    muscleGroups: ['Pecho'],
+    equipment: 'Mancuernas',
+    pattern: 'Apertura horizontal',
+    subtype: 'Banco inclinado',
+    description: 'Más parte superior',
+  },
+  {
+    id: 'ex_098',
+    name: 'DB decline fly',
+    muscleGroups: ['Pecho'],
+    equipment: 'Mancuernas',
+    pattern: 'Apertura horizontal',
+    subtype: 'Banco declinado',
+    description: 'Más fibras inferiores',
+  },
+  {
+    id: 'ex_099',
+    name: 'DB squeeze press',
+    muscleGroups: ['Pecho'],
+    equipment: 'Mancuernas',
+    pattern: 'Empuje + aducción',
+    subtype: 'Banco plano',
+    description: 'Mancuernas juntas, aducción constante',
+  },
+  {
+    id: 'ex_100',
+    name: 'DB pullover (pecho)',
+    muscleGroups: ['Pecho'],
+    equipment: 'Mancuernas',
+    pattern: 'Flexión hombro',
+    subtype: 'Banco',
+    description: 'Pectoral + dorsal (ejercicio híbrido)',
+  },
+  {
+    id: 'ex_101',
+    name: 'Single-arm DB bench press',
+    muscleGroups: ['Pecho'],
+    equipment: 'Mancuernas',
+    pattern: 'Empuje unilateral',
+    subtype: 'Banco plano',
+    description: 'Core anti-rotación + pecho',
+  },
+  {
+    id: 'ex_102',
+    name: 'Machine chest press (flat)',
+    muscleGroups: ['Pecho'],
+    equipment: 'Máquina',
+    pattern: 'Empuje horizontal',
+    subtype: 'Chest press machine',
+    description: 'Press de pecho medio/inferior guiado',
+  },
+  {
+    id: 'ex_103',
+    name: 'Machine incline chest press',
+    muscleGroups: ['Pecho'],
+    equipment: 'Máquina',
+    pattern: 'Empuje horizontal inclinado',
+    subtype: 'Incline chest press',
+    description: 'Upper chest guiado',
+  },
+  {
+    id: 'ex_104',
+    name: 'Machine decline chest press',
+    muscleGroups: ['Pecho'],
+    equipment: 'Máquina',
+    pattern: 'Empuje horizontal declinado',
+    subtype: 'Decline chest press',
+    description: 'Lower chest guiado',
+  },
+  {
+    id: 'ex_105',
+    name: 'Plate-loaded chest press',
+    muscleGroups: ['Pecho'],
+    equipment: 'Máquina',
+    pattern: 'Empuje horizontal',
+    subtype: 'Palanca (plate-loaded)',
+    description: 'Unilateral/bilateral',
+  },
+  {
+    id: 'ex_106',
+    name: 'Plate-loaded incline press',
+    muscleGroups: ['Pecho'],
+    equipment: 'Máquina',
+    pattern: 'Empuje horizontal inclinado',
+    subtype: 'Palanca',
+    description: 'Upper chest pesado',
+  },
+  {
+    id: 'ex_107',
+    name: 'Pec deck fly (machine)',
+    muscleGroups: ['Pecho'],
+    equipment: 'Máquina',
+    pattern: 'Apertura horizontal',
+    subtype: 'Pec-deck',
+    description: 'Aislante de pecho',
+  },
+  {
+    id: 'ex_108',
+    name: 'Cable chest press (standing)',
+    muscleGroups: ['Pecho'],
+    equipment: 'Polea',
+    pattern: 'Empuje horizontal',
+    subtype: 'Dos poleas, de pie',
+    description: 'Como press pero en poleas',
+  },
+  {
+    id: 'ex_109',
+    name: 'Cable chest press (lying)',
+    muscleGroups: ['Pecho'],
+    equipment: 'Polea',
+    pattern: 'Empuje horizontal',
+    subtype: 'Banco entre poleas',
+    description: 'Trazo similar a DB press con tensión constante',
+  },
+  {
+    id: 'ex_110',
+    name: 'High-to-low cable fly',
+    muscleGroups: ['Pecho'],
+    equipment: 'Polea',
+    pattern: 'Aducción diagonal',
+    subtype: 'Poleas altas',
+    description: 'Énfasis en pectoral inferior',
+  },
+  {
+    id: 'ex_111',
+    name: 'Low-to-high cable fly',
+    muscleGroups: ['Pecho'],
+    equipment: 'Polea',
+    pattern: 'Aducción diagonal',
+    subtype: 'Poleas bajas',
+    description: 'Énfasis en porción superior',
+  },
+  {
+    id: 'ex_112',
+    name: 'Mid-cable fly (chest level)',
+    muscleGroups: ['Pecho'],
+    equipment: 'Polea',
+    pattern: 'Apertura horizontal',
+    subtype: 'Poleas a altura pecho',
+    description: 'Pectoral medio',
+  },
+  {
+    id: 'ex_113',
+    name: 'Single-arm cable fly',
+    muscleGroups: ['Pecho'],
+    equipment: 'Polea',
+    pattern: 'Apertura horizontal unilateral',
+    subtype: 'Una polea',
+    description: 'Ajustes finos de aducción',
+  },
+  {
+    id: 'ex_114',
+    name: 'Cable crossover (classic)',
+    muscleGroups: ['Pecho'],
+    equipment: 'Polea',
+    pattern: 'Apertura horizontal',
+    subtype: 'Dos poleas',
+    description: 'Desde alto a bajo o medio; muy usado',
+  },
+  {
+    id: 'ex_115',
+    name: 'Cable pullover (pecho)',
+    muscleGroups: ['Pecho'],
+    equipment: 'Polea',
+    pattern: 'Flexión hombro',
+    subtype: 'Alta',
+    description: 'Similar a DB pullover con tensión cable',
+  },
+  {
+    id: 'ex_116',
+    name: 'Landmine press (ángulo pecho)',
+    muscleGroups: ['Pecho'],
+    equipment: 'Barra + landmine',
+    pattern: 'Empuje diagonal',
+    subtype: 'De pie/rodillas',
+    description: 'Mezcla hombro/pecho según ángulo',
+  },
+  {
+    id: 'ex_117',
+    name: 'Push-up on handles',
+    muscleGroups: ['Pecho'],
+    equipment: 'Peso corporal',
+    pattern: 'Empuje horizontal',
+    subtype: 'Asas / paralelas bajas',
+    description: 'Mayor ROM, menos estrés muñeca',
+  },
+  {
+    id: 'ex_118',
+    name: 'Weighted push-up',
+    muscleGroups: ['Pecho'],
+    equipment: 'Peso corporal + lastre',
+    pattern: 'Empuje horizontal',
+    subtype: 'Suelo',
+    description: 'Versión cargada de push-up',
+  },
+  // ========== BÍCEPS ==========
+  {
+    id: 'ex_119',
     name: 'Chin-up',
     muscleGroups: ['Bíceps'],
     equipment: 'Peso corporal',
@@ -581,7 +1078,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Dominada supina, ancho/medio/estrecho',
   },
   {
-    id: 'ex_065',
+    id: 'ex_120',
     name: 'Neutral-grip chin-up',
     muscleGroups: ['Bíceps'],
     equipment: 'Peso corporal',
@@ -590,7 +1087,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Palmas enfrentadas, más braquiorradial',
   },
   {
-    id: 'ex_066',
+    id: 'ex_121',
     name: 'Towel chin-up',
     muscleGroups: ['Bíceps'],
     equipment: 'Peso corporal',
@@ -599,7 +1096,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Agarre toalla, fuerte estímulo de agarre',
   },
   {
-    id: 'ex_067',
+    id: 'ex_122',
     name: 'Bodyweight arm curl (TRX/anillas)',
     muscleGroups: ['Bíceps'],
     equipment: 'Peso corporal',
@@ -608,7 +1105,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Suspended arm curl con cuerpo inclinado',
   },
   {
-    id: 'ex_068',
+    id: 'ex_123',
     name: 'Isometric hold chin-up',
     muscleGroups: ['Bíceps'],
     equipment: 'Peso corporal',
@@ -617,7 +1114,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mantén flexión de codo 90° o arriba',
   },
   {
-    id: 'ex_069',
+    id: 'ex_124',
     name: 'Strict barbell curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Barra',
@@ -626,7 +1123,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'De pie, torso fijo, agarre supino',
   },
   {
-    id: 'ex_070',
+    id: 'ex_125',
     name: 'Cheat barbell curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Barra',
@@ -635,7 +1132,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mismo que strict pero con algo de impulso',
   },
   {
-    id: 'ex_071',
+    id: 'ex_126',
     name: 'Barbell curl (recta)',
     muscleGroups: ['Bíceps'],
     equipment: 'Barra',
@@ -644,7 +1141,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Curl clásico con barra recta',
   },
   {
-    id: 'ex_072',
+    id: 'ex_127',
     name: 'EZ bar curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Barra EZ',
@@ -653,7 +1150,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mismas mecánicas, menos estrés muñeca',
   },
   {
-    id: 'ex_073',
+    id: 'ex_128',
     name: 'Close-grip barbell curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Barra',
@@ -662,7 +1159,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Agarre estrecho, más parte externa bíceps',
   },
   {
-    id: 'ex_074',
+    id: 'ex_129',
     name: 'Wide-grip barbell curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Barra',
@@ -671,7 +1168,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Agarre ancho, más cabeza corta',
   },
   {
-    id: 'ex_075',
+    id: 'ex_130',
     name: 'Drag curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Barra',
@@ -680,7 +1177,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Barra \'arrastra\' por el torso',
   },
   {
-    id: 'ex_076',
+    id: 'ex_131',
     name: 'Barbell preacher curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Barra',
@@ -689,7 +1186,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Bíceps aislado, brazo apoyado',
   },
   {
-    id: 'ex_077',
+    id: 'ex_132',
     name: 'Close-grip preacher curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Barra',
@@ -698,7 +1195,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Versión agarre cerrado',
   },
   {
-    id: 'ex_078',
+    id: 'ex_133',
     name: 'Scott curl (barra)',
     muscleGroups: ['Bíceps'],
     equipment: 'Barra',
@@ -707,7 +1204,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Variante de preacher',
   },
   {
-    id: 'ex_079',
+    id: 'ex_134',
     name: 'Spider curl (barra)',
     muscleGroups: ['Bíceps'],
     equipment: 'Barra',
@@ -716,7 +1213,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Pecho al banco, brazos colgando',
   },
   {
-    id: 'ex_080',
+    id: 'ex_135',
     name: '21s barbell curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Barra',
@@ -725,7 +1222,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: '7+7+7 (parcial baja, alta y completa)',
   },
   {
-    id: 'ex_081',
+    id: 'ex_136',
     name: 'Strict curl (contra pared)',
     muscleGroups: ['Bíceps'],
     equipment: 'Barra',
@@ -734,7 +1231,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Espalda a la pared, elimina balanceo',
   },
   {
-    id: 'ex_082',
+    id: 'ex_137',
     name: 'Landmine biceps curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Barra + landmine',
@@ -743,7 +1240,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Barra anclada, curl con agarre neutro',
   },
   {
-    id: 'ex_083',
+    id: 'ex_138',
     name: 'Standing DB curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Mancuernas',
@@ -752,7 +1249,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Alterno o simultáneo, supino',
   },
   {
-    id: 'ex_084',
+    id: 'ex_139',
     name: 'Seated DB curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Mancuernas',
@@ -761,7 +1258,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Sentado, menos ayuda del torso',
   },
   {
-    id: 'ex_085',
+    id: 'ex_140',
     name: 'Alternating DB curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Mancuernas',
@@ -770,7 +1267,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Alternas brazos',
   },
   {
-    id: 'ex_086',
+    id: 'ex_141',
     name: 'Simultaneous DB curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Mancuernas',
@@ -779,7 +1276,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Ambos brazos a la vez',
   },
   {
-    id: 'ex_087',
+    id: 'ex_142',
     name: 'Hammer curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Mancuernas',
@@ -788,7 +1285,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Agarre neutro (braquiorradial/braquial)',
   },
   {
-    id: 'ex_088',
+    id: 'ex_143',
     name: 'Cross-body hammer curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Mancuernas',
@@ -797,7 +1294,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mancuerna hacia hombro opuesto',
   },
   {
-    id: 'ex_089',
+    id: 'ex_144',
     name: 'Incline DB curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Mancuernas',
@@ -806,7 +1303,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mayor estiramiento bíceps',
   },
   {
-    id: 'ex_090',
+    id: 'ex_145',
     name: 'Lying DB curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Mancuernas',
@@ -815,7 +1312,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Tumbado, cambia curva de fuerza',
   },
   {
-    id: 'ex_091',
+    id: 'ex_146',
     name: 'Flat bench DB curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Mancuernas',
@@ -824,7 +1321,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Variante sentada',
   },
   {
-    id: 'ex_092',
+    id: 'ex_147',
     name: 'Concentration curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Mancuernas',
@@ -833,7 +1330,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Brazo apoyado en muslo interno',
   },
   {
-    id: 'ex_093',
+    id: 'ex_148',
     name: 'DB preacher curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Mancuernas',
@@ -842,7 +1339,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Variante unilateral',
   },
   {
-    id: 'ex_094',
+    id: 'ex_149',
     name: 'Spider curl (DB)',
     muscleGroups: ['Bíceps'],
     equipment: 'Mancuernas',
@@ -851,7 +1348,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Como la de barra pero con DB',
   },
   {
-    id: 'ex_095',
+    id: 'ex_150',
     name: 'Waiter curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Mancuernas/disco',
@@ -860,7 +1357,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Sosteniendo DB/disco como \'bandeja\'',
   },
   {
-    id: 'ex_096',
+    id: 'ex_151',
     name: 'Zottman curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Mancuernas',
@@ -869,7 +1366,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Subes supino, bajas prono',
   },
   {
-    id: 'ex_097',
+    id: 'ex_152',
     name: 'Inverse Zottman curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Mancuernas',
@@ -878,7 +1375,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Variante enfatizando excéntrica diferente',
   },
   {
-    id: 'ex_098',
+    id: 'ex_153',
     name: 'Bayesian cable curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Polea',
@@ -887,7 +1384,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Estiramiento grande, cuerpo adelantado',
   },
   {
-    id: 'ex_099',
+    id: 'ex_154',
     name: 'Standard cable curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Polea',
@@ -896,7 +1393,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Barra recta/EZ, de pie',
   },
   {
-    id: 'ex_100',
+    id: 'ex_155',
     name: 'Cable rope curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Polea',
@@ -905,7 +1402,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Cuerda, puedes rotar al final',
   },
   {
-    id: 'ex_101',
+    id: 'ex_156',
     name: 'Close-grip cable curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Polea',
@@ -914,7 +1411,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Agarre cerrado con barra',
   },
   {
-    id: 'ex_102',
+    id: 'ex_157',
     name: 'One-arm cable curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Polea',
@@ -923,7 +1420,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Unilateral, mango individual',
   },
   {
-    id: 'ex_103',
+    id: 'ex_158',
     name: 'High cable curl (double)',
     muscleGroups: ['Bíceps'],
     equipment: 'Polea',
@@ -932,7 +1429,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Brazos en cruz hacia cabeza',
   },
   {
-    id: 'ex_104',
+    id: 'ex_159',
     name: 'Overhead cable curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Polea',
@@ -941,7 +1438,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Curl llevando manos hacia frente/cabeza',
   },
   {
-    id: 'ex_105',
+    id: 'ex_160',
     name: 'Reverse cable curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Polea',
@@ -950,7 +1447,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Prono, más braquiorradial',
   },
   {
-    id: 'ex_106',
+    id: 'ex_161',
     name: 'Machine biceps curl (sentado)',
     muscleGroups: ['Bíceps'],
     equipment: 'Máquina',
@@ -959,7 +1456,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Curl sentado clásico',
   },
   {
-    id: 'ex_107',
+    id: 'ex_162',
     name: 'Plate-loaded biceps machine',
     muscleGroups: ['Bíceps'],
     equipment: 'Máquina',
@@ -968,7 +1465,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Unilateral/bilateral',
   },
   {
-    id: 'ex_108',
+    id: 'ex_163',
     name: 'Machine preacher curl',
     muscleGroups: ['Bíceps'],
     equipment: 'Máquina',
@@ -977,7 +1474,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Apoyo tipo Scott/preacher',
   },
   {
-    id: 'ex_109',
+    id: 'ex_164',
     name: 'Cable preacher machine',
     muscleGroups: ['Bíceps'],
     equipment: 'Máquina/polea',
@@ -986,7 +1483,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Tensión continua del cable',
   },
   {
-    id: 'ex_110',
+    id: 'ex_165',
     name: 'Suspended arm curl (TRX)',
     muscleGroups: ['Bíceps'],
     equipment: 'TRX/anillas',
@@ -995,7 +1492,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Muy similar a curl en polea invertido',
   },
   {
-    id: 'ex_111',
+    id: 'ex_166',
     name: 'Biceps isometric hold (machine)',
     muscleGroups: ['Bíceps'],
     equipment: 'Máquina',
@@ -1004,7 +1501,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mantener ángulo fijo contra carga',
   },
   {
-    id: 'ex_112',
+    id: 'ex_167',
     name: 'Close-grip push-up',
     muscleGroups: ['Tríceps'],
     equipment: 'Peso corporal',
@@ -1013,7 +1510,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Manos más juntas, más énfasis tríceps',
   },
   {
-    id: 'ex_113',
+    id: 'ex_168',
     name: 'Diamond push-up',
     muscleGroups: ['Tríceps'],
     equipment: 'Peso corporal',
@@ -1022,7 +1519,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Manos en triángulo; altísima activación EMG',
   },
   {
-    id: 'ex_114',
+    id: 'ex_169',
     name: 'Triceps triangle push-up',
     muscleGroups: ['Tríceps'],
     equipment: 'Peso corporal',
@@ -1031,7 +1528,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Variante de diamond/triangle',
   },
   {
-    id: 'ex_115',
+    id: 'ex_170',
     name: 'Close-grip bench push-up (banco)',
     muscleGroups: ['Tríceps'],
     equipment: 'Peso corporal',
@@ -1040,7 +1537,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Menos carga que en suelo',
   },
   {
-    id: 'ex_116',
+    id: 'ex_171',
     name: 'Bench dip',
     muscleGroups: ['Tríceps'],
     equipment: 'Peso corporal',
@@ -1049,7 +1546,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Pies en suelo o elevado, énfasis tríceps',
   },
   {
-    id: 'ex_117',
+    id: 'ex_172',
     name: 'Parallel bar dip (triceps)',
     muscleGroups: ['Tríceps'],
     equipment: 'Peso corporal',
@@ -1058,7 +1555,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Tronco más vertical, codos pegados',
   },
   {
-    id: 'ex_118',
+    id: 'ex_173',
     name: 'Ring dip (tríceps)',
     muscleGroups: ['Tríceps'],
     equipment: 'Peso corporal',
@@ -1067,7 +1564,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Inestable, alta demanda',
   },
   {
-    id: 'ex_119',
+    id: 'ex_174',
     name: 'Close-grip dip (paralelas)',
     muscleGroups: ['Tríceps'],
     equipment: 'Peso corporal',
@@ -1076,7 +1573,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Agarre más cerrado, más tríceps',
   },
   {
-    id: 'ex_120',
+    id: 'ex_175',
     name: 'Isometric hold dip',
     muscleGroups: ['Tríceps'],
     equipment: 'Peso corporal',
@@ -1085,16 +1582,18 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mantener codos cerca de 90°',
   },
   {
-    id: 'ex_121',
+    id: 'ex_176',
     name: 'Close-grip bench press',
     muscleGroups: ['Tríceps'],
     equipment: 'Barra',
     pattern: 'Empuje horizontal',
     subtype: 'Banca',
     description: 'Manos estrechas, gran carga para tríceps',
+    mediaUrl: 'https://vptrkkpozgpwwpxfwltn.supabase.co/storage/v1/object/public/default-exercises/bench_press.png',
+    mediaType: 'image',
   },
   {
-    id: 'ex_122',
+    id: 'ex_177',
     name: 'Reverse-grip close bench press',
     muscleGroups: ['Tríceps'],
     equipment: 'Barra',
@@ -1103,7 +1602,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Agarre supino, cambia énfasis cabeza medial',
   },
   {
-    id: 'ex_123',
+    id: 'ex_178',
     name: 'Board press (agarre cerrado)',
     muscleGroups: ['Tríceps'],
     equipment: 'Barra',
@@ -1112,7 +1611,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Parcial superior, foco tríceps',
   },
   {
-    id: 'ex_124',
+    id: 'ex_179',
     name: 'Floor press (agarre cerrado)',
     muscleGroups: ['Tríceps'],
     equipment: 'Barra',
@@ -1121,7 +1620,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Recorte ROM, gran carga',
   },
   {
-    id: 'ex_125',
+    id: 'ex_180',
     name: 'JM press',
     muscleGroups: ['Tríceps'],
     equipment: 'Barra',
@@ -1130,7 +1629,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Híbrido press + extensión (muy de powerlifting)',
   },
   {
-    id: 'ex_126',
+    id: 'ex_181',
     name: 'Smith close-grip bench press',
     muscleGroups: ['Tríceps'],
     equipment: 'Barra Smith',
@@ -1139,7 +1638,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Más control de trayectoria',
   },
   {
-    id: 'ex_127',
+    id: 'ex_182',
     name: 'Lying barbell triceps extension (skullcrusher)',
     muscleGroups: ['Tríceps'],
     equipment: 'Barra',
@@ -1148,7 +1647,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Flex/extensión codo, barra hacia frente/cabeza',
   },
   {
-    id: 'ex_128',
+    id: 'ex_183',
     name: 'Incline skullcrusher (barra)',
     muscleGroups: ['Tríceps'],
     equipment: 'Barra',
@@ -1157,7 +1656,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Más estiramiento en cabeza larga',
   },
   {
-    id: 'ex_129',
+    id: 'ex_184',
     name: 'Decline skullcrusher (barra)',
     muscleGroups: ['Tríceps'],
     equipment: 'Barra',
@@ -1166,7 +1665,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'ROM y sensación distintos',
   },
   {
-    id: 'ex_130',
+    id: 'ex_185',
     name: 'EZ-bar skullcrusher',
     muscleGroups: ['Tríceps'],
     equipment: 'Barra EZ',
@@ -1175,7 +1674,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Menos estrés muñeca',
   },
   {
-    id: 'ex_131',
+    id: 'ex_186',
     name: 'Lying French press (barra)',
     muscleGroups: ['Tríceps'],
     equipment: 'Barra',
@@ -1184,7 +1683,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Variante clásica \'press francés\'',
   },
   {
-    id: 'ex_132',
+    id: 'ex_187',
     name: 'Overhead EZ-bar triceps extension',
     muscleGroups: ['Tríceps'],
     equipment: 'Barra EZ',
@@ -1193,7 +1692,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Por encima de la cabeza, enfatiza cabeza larga',
   },
   {
-    id: 'ex_133',
+    id: 'ex_188',
     name: 'Seated overhead EZ extension',
     muscleGroups: ['Tríceps'],
     equipment: 'Barra EZ',
@@ -1202,7 +1701,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Respaldo, más estabilidad',
   },
   {
-    id: 'ex_134',
+    id: 'ex_189',
     name: 'Standing overhead bar extension',
     muscleGroups: ['Tríceps'],
     equipment: 'Barra',
@@ -1211,7 +1710,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Más demanda de core',
   },
   {
-    id: 'ex_135',
+    id: 'ex_190',
     name: 'Rolling triceps extension (barra)',
     muscleGroups: ['Tríceps'],
     equipment: 'Barra',
@@ -1220,7 +1719,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Combina skullcrusher + pullover',
   },
   {
-    id: 'ex_136',
+    id: 'ex_191',
     name: 'Barbell kickback',
     muscleGroups: ['Tríceps'],
     equipment: 'Barra corta',
@@ -1229,7 +1728,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Menos común, similar a DB kickback',
   },
   {
-    id: 'ex_137',
+    id: 'ex_192',
     name: 'Flat DB triceps extension (DB skullcrusher)',
     muscleGroups: ['Tríceps'],
     equipment: 'Mancuernas',
@@ -1238,7 +1737,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Similar a skullcrusher con barra',
   },
   {
-    id: 'ex_138',
+    id: 'ex_193',
     name: 'Incline DB triceps extension',
     muscleGroups: ['Tríceps'],
     equipment: 'Mancuernas',
@@ -1247,7 +1746,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mayor estiramiento',
   },
   {
-    id: 'ex_139',
+    id: 'ex_194',
     name: 'Decline DB triceps extension',
     muscleGroups: ['Tríceps'],
     equipment: 'Mancuernas',
@@ -1256,7 +1755,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Modifica curva de fuerza',
   },
   {
-    id: 'ex_140',
+    id: 'ex_195',
     name: 'DB French press (dos manos)',
     muscleGroups: ['Tríceps'],
     equipment: 'Mancuernas',
@@ -1265,7 +1764,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Una mancuerna sujeta con ambas manos',
   },
   {
-    id: 'ex_141',
+    id: 'ex_196',
     name: 'One-arm overhead DB extension',
     muscleGroups: ['Tríceps'],
     equipment: 'Mancuernas',
@@ -1274,7 +1773,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Unilateral, corrige desbalances',
   },
   {
-    id: 'ex_142',
+    id: 'ex_197',
     name: 'DB kickback',
     muscleGroups: ['Tríceps'],
     equipment: 'Mancuernas',
@@ -1283,7 +1782,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Brazo paralelo al suelo, extiendes codo',
   },
   {
-    id: 'ex_143',
+    id: 'ex_198',
     name: 'Standing DB kickback',
     muscleGroups: ['Tríceps'],
     equipment: 'Mancuernas',
@@ -1292,7 +1791,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Similar pero sin apoyo',
   },
   {
-    id: 'ex_144',
+    id: 'ex_199',
     name: 'Cross-body DB kickback',
     muscleGroups: ['Tríceps'],
     equipment: 'Mancuernas',
@@ -1301,7 +1800,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Llevar DB algo hacia dentro',
   },
   {
-    id: 'ex_145',
+    id: 'ex_200',
     name: 'Close-grip DB press',
     muscleGroups: ['Tríceps'],
     equipment: 'Mancuernas',
@@ -1310,7 +1809,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mancuernas pegadas, foco tríceps',
   },
   {
-    id: 'ex_146',
+    id: 'ex_201',
     name: 'Neutral-grip DB press (tríceps)',
     muscleGroups: ['Tríceps'],
     equipment: 'Mancuernas',
@@ -1319,7 +1818,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Agarre neutro, codos pegados',
   },
   {
-    id: 'ex_147',
+    id: 'ex_202',
     name: 'Tate press',
     muscleGroups: ['Tríceps'],
     equipment: 'Mancuernas',
@@ -1328,7 +1827,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'DB parten sobre pecho, codos abiertos',
   },
   {
-    id: 'ex_148',
+    id: 'ex_203',
     name: 'KB overhead triceps extension',
     muscleGroups: ['Tríceps'],
     equipment: 'Kettlebell',
@@ -1337,7 +1836,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Una o dos manos, similar a DB',
   },
   {
-    id: 'ex_149',
+    id: 'ex_204',
     name: 'KB floor skullcrusher',
     muscleGroups: ['Tríceps'],
     equipment: 'Kettlebell',
@@ -1346,7 +1845,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Variante tumbado',
   },
   {
-    id: 'ex_150',
+    id: 'ex_205',
     name: 'Rope triceps pushdown',
     muscleGroups: ['Tríceps'],
     equipment: 'Polea',
@@ -1355,7 +1854,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Separando cuerda al final',
   },
   {
-    id: 'ex_151',
+    id: 'ex_206',
     name: 'Straight-bar triceps pushdown',
     muscleGroups: ['Tríceps'],
     equipment: 'Polea',
@@ -1364,7 +1863,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Prono',
   },
   {
-    id: 'ex_152',
+    id: 'ex_207',
     name: 'V-bar triceps pushdown',
     muscleGroups: ['Tríceps'],
     equipment: 'Polea',
@@ -1373,7 +1872,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Agarre neutro',
   },
   {
-    id: 'ex_153',
+    id: 'ex_208',
     name: 'Reverse-grip pushdown',
     muscleGroups: ['Tríceps'],
     equipment: 'Polea',
@@ -1382,7 +1881,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Supino, énfasis cabeza medial',
   },
   {
-    id: 'ex_154',
+    id: 'ex_209',
     name: 'One-arm cable pushdown',
     muscleGroups: ['Tríceps'],
     equipment: 'Polea',
@@ -1391,7 +1890,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Unilateral',
   },
   {
-    id: 'ex_155',
+    id: 'ex_210',
     name: 'Overhead cable triceps extension (barra)',
     muscleGroups: ['Tríceps'],
     equipment: 'Polea',
@@ -1400,7 +1899,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Brazos sobre cabeza',
   },
   {
-    id: 'ex_156',
+    id: 'ex_211',
     name: 'Overhead cable rope extension',
     muscleGroups: ['Tríceps'],
     equipment: 'Polea',
@@ -1409,7 +1908,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mayor libertad de muñeca',
   },
   {
-    id: 'ex_157',
+    id: 'ex_212',
     name: 'Katana cable extension',
     muscleGroups: ['Tríceps'],
     equipment: 'Polea',
@@ -1418,7 +1917,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Brazos ligeramente en diagonal (tipo \'katana\')',
   },
   {
-    id: 'ex_158',
+    id: 'ex_213',
     name: 'Cable triceps pushaway',
     muscleGroups: ['Tríceps'],
     equipment: 'Polea',
@@ -1427,7 +1926,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Desde frente hacia abajo/atrás; gran estiramiento',
   },
   {
-    id: 'ex_159',
+    id: 'ex_214',
     name: 'Cable kickback',
     muscleGroups: ['Tríceps'],
     equipment: 'Polea',
@@ -1436,7 +1935,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Simula DB kickback con tensión constante',
   },
   {
-    id: 'ex_160',
+    id: 'ex_215',
     name: 'Lying cable triceps extension',
     muscleGroups: ['Tríceps'],
     equipment: 'Polea',
@@ -1445,7 +1944,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Similar a skullcrusher pero con cable',
   },
   {
-    id: 'ex_161',
+    id: 'ex_216',
     name: 'Machine triceps extension (sentado)',
     muscleGroups: ['Tríceps'],
     equipment: 'Máquina',
@@ -1454,7 +1953,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Codos fijos, patrón guiado',
   },
   {
-    id: 'ex_162',
+    id: 'ex_217',
     name: 'Plate-loaded triceps machine',
     muscleGroups: ['Tríceps'],
     equipment: 'Máquina',
@@ -1463,7 +1962,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Unilateral/bilateral',
   },
   {
-    id: 'ex_163',
+    id: 'ex_218',
     name: 'Machine dip (tríceps)',
     muscleGroups: ['Tríceps'],
     equipment: 'Máquina',
@@ -1472,7 +1971,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Configura para énfasis tríceps',
   },
   {
-    id: 'ex_164',
+    id: 'ex_219',
     name: 'Cable-assisted dip',
     muscleGroups: ['Tríceps'],
     equipment: 'Máquina/polea',
@@ -1481,7 +1980,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Misma mecánica con ayuda',
   },
   {
-    id: 'ex_165',
+    id: 'ex_220',
     name: 'Close-grip Smith machine press',
     muscleGroups: ['Tríceps'],
     equipment: 'Máquina Smith',
@@ -1490,7 +1989,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Alternativa guiada a CGBP',
   },
   {
-    id: 'ex_166',
+    id: 'ex_221',
     name: 'Smith JM press',
     muscleGroups: ['Tríceps'],
     equipment: 'Máquina Smith',
@@ -1499,7 +1998,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Menos necesidad de estabilizar',
   },
   {
-    id: 'ex_167',
+    id: 'ex_222',
     name: 'Glute bridge',
     muscleGroups: ['Glúteo'],
     equipment: 'Peso corporal',
@@ -1508,7 +2007,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Bilateral, pies apoyados, básico',
   },
   {
-    id: 'ex_168',
+    id: 'ex_223',
     name: 'Glute bridge feet elevated',
     muscleGroups: ['Glúteo'],
     equipment: 'Peso corporal',
@@ -1517,7 +2016,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mayor ROM isquios/glúteo',
   },
   {
-    id: 'ex_169',
+    id: 'ex_224',
     name: 'Single-leg glute bridge',
     muscleGroups: ['Glúteo'],
     equipment: 'Peso corporal',
@@ -1526,7 +2025,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Aísla un glúteo, muy usado en rehab',
   },
   {
-    id: 'ex_170',
+    id: 'ex_225',
     name: 'Hip thrust (BW)',
     muscleGroups: ['Glúteo'],
     equipment: 'Peso corporal',
@@ -1535,7 +2034,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Versión sin carga externa',
   },
   {
-    id: 'ex_171',
+    id: 'ex_226',
     name: 'Single-leg hip thrust (BW)',
     muscleGroups: ['Glúteo'],
     equipment: 'Peso corporal',
@@ -1544,7 +2043,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Unilateral, alta activación',
   },
   {
-    id: 'ex_172',
+    id: 'ex_227',
     name: 'Frog pump',
     muscleGroups: ['Glúteo'],
     equipment: 'Peso corporal',
@@ -1553,7 +2052,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Cadera abducida y rotada, más glúteo',
   },
   {
-    id: 'ex_173',
+    id: 'ex_228',
     name: 'Marching hip thrust (BW)',
     muscleGroups: ['Glúteo'],
     equipment: 'Peso corporal',
@@ -1562,7 +2061,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Alternas levantando una pierna (anti-rotación)',
   },
   {
-    id: 'ex_174',
+    id: 'ex_229',
     name: 'Reverse hyper (improvisado)',
     muscleGroups: ['Glúteo'],
     equipment: 'Peso corporal',
@@ -1571,7 +2070,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Tumbado boca abajo, elevando piernas',
   },
   {
-    id: 'ex_175',
+    id: 'ex_230',
     name: 'Step-up (BW)',
     muscleGroups: ['Glúteo'],
     equipment: 'Peso corporal',
@@ -1580,7 +2079,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Subida a banco, énfasis según altura',
   },
   {
-    id: 'ex_176',
+    id: 'ex_231',
     name: 'Walking lunge',
     muscleGroups: ['Glúteo'],
     equipment: 'Peso corporal',
@@ -1589,7 +2088,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Paso largo = más glúteo',
   },
   {
-    id: 'ex_177',
+    id: 'ex_232',
     name: 'Rear lunge',
     muscleGroups: ['Glúteo'],
     equipment: 'Peso corporal',
@@ -1598,7 +2097,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Desplazas pierna atrás, glúteo delantera',
   },
   {
-    id: 'ex_178',
+    id: 'ex_233',
     name: 'Curtsy lunge (BW)',
     muscleGroups: ['Glúteo'],
     equipment: 'Peso corporal',
@@ -1607,7 +2106,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Paso cruzado atrás, glúteo medio',
   },
   {
-    id: 'ex_179',
+    id: 'ex_234',
     name: 'Barbell hip thrust',
     muscleGroups: ['Glúteo'],
     equipment: 'Barra',
@@ -1616,7 +2115,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: '\'Rey\' del glúteo, muy alta activación',
   },
   {
-    id: 'ex_180',
+    id: 'ex_235',
     name: 'Barbell hip thrust (wide stance)',
     muscleGroups: ['Glúteo'],
     equipment: 'Barra',
@@ -1625,7 +2124,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Pies más abiertos, más glúteo medio',
   },
   {
-    id: 'ex_181',
+    id: 'ex_236',
     name: 'Barbell hip thrust (feet elevated)',
     muscleGroups: ['Glúteo'],
     equipment: 'Barra',
@@ -1634,7 +2133,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mayor ROM',
   },
   {
-    id: 'ex_182',
+    id: 'ex_237',
     name: 'Single-leg barbell hip thrust',
     muscleGroups: ['Glúteo'],
     equipment: 'Barra',
@@ -1643,7 +2142,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Avanzado, difícil de cargar',
   },
   {
-    id: 'ex_183',
+    id: 'ex_238',
     name: 'Barbell glute bridge',
     muscleGroups: ['Glúteo'],
     equipment: 'Barra',
@@ -1652,7 +2151,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Menos ROM que hip thrust',
   },
   {
-    id: 'ex_184',
+    id: 'ex_239',
     name: 'Barbell glute bridge (wide stance)',
     muscleGroups: ['Glúteo'],
     equipment: 'Barra',
@@ -1661,7 +2160,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Abre pies para más glúteo',
   },
   {
-    id: 'ex_185',
+    id: 'ex_240',
     name: 'Barbell good morning',
     muscleGroups: ['Glúteo'],
     equipment: 'Barra',
@@ -1670,7 +2169,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Erectores + glúteo/isquios',
   },
   {
-    id: 'ex_186',
+    id: 'ex_241',
     name: 'Back squat (emphasis glute)',
     muscleGroups: ['Glúteo'],
     equipment: 'Barra',
@@ -1679,7 +2178,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mayor énfasis glúteo con profundidad',
   },
   {
-    id: 'ex_187',
+    id: 'ex_242',
     name: 'Low-bar squat',
     muscleGroups: ['Glúteo'],
     equipment: 'Barra',
@@ -1688,7 +2187,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Más cadena posterior',
   },
   {
-    id: 'ex_188',
+    id: 'ex_243',
     name: 'Box squat (atrás)',
     muscleGroups: ['Glúteo'],
     equipment: 'Barra',
@@ -1697,7 +2196,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Ayuda a sentarse \'atrás\', más cadera',
   },
   {
-    id: 'ex_189',
+    id: 'ex_244',
     name: 'Barbell reverse lunge',
     muscleGroups: ['Glúteo'],
     equipment: 'Barra',
@@ -1706,7 +2205,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Paso atrás, cadera cargada',
   },
   {
-    id: 'ex_190',
+    id: 'ex_245',
     name: 'Barbell walking lunge',
     muscleGroups: ['Glúteo'],
     equipment: 'Barra',
@@ -1715,7 +2214,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Grande trabajo glúteo por paso largo',
   },
   {
-    id: 'ex_191',
+    id: 'ex_246',
     name: 'Barbell step-up',
     muscleGroups: ['Glúteo'],
     equipment: 'Barra',
@@ -1724,7 +2223,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Glúteo en pierna que sube',
   },
   {
-    id: 'ex_192',
+    id: 'ex_247',
     name: 'Romanian deadlift',
     muscleGroups: ['Glúteo'],
     equipment: 'Barra',
@@ -1733,7 +2232,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Gran glúteo + femoral',
   },
   {
-    id: 'ex_193',
+    id: 'ex_248',
     name: 'Sumo deadlift',
     muscleGroups: ['Glúteo'],
     equipment: 'Barra',
@@ -1742,7 +2241,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Base amplia, mucho glúteo/aductores',
   },
   {
-    id: 'ex_194',
+    id: 'ex_249',
     name: 'Dumbbell hip thrust',
     muscleGroups: ['Glúteo'],
     equipment: 'Mancuernas',
@@ -1751,7 +2250,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mancuerna sobre cadera',
   },
   {
-    id: 'ex_195',
+    id: 'ex_250',
     name: 'DB glute bridge',
     muscleGroups: ['Glúteo'],
     equipment: 'Mancuernas',
@@ -1760,7 +2259,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Glute bridge con peso',
   },
   {
-    id: 'ex_196',
+    id: 'ex_251',
     name: 'Single-leg DB glute bridge',
     muscleGroups: ['Glúteo'],
     equipment: 'Mancuernas',
@@ -1769,7 +2268,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mancuerna en cadera de pierna activa',
   },
   {
-    id: 'ex_197',
+    id: 'ex_252',
     name: 'DB walking lunge',
     muscleGroups: ['Glúteo'],
     equipment: 'Mancuernas',
@@ -1778,7 +2277,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Carga en manos',
   },
   {
-    id: 'ex_198',
+    id: 'ex_253',
     name: 'DB reverse lunge',
     muscleGroups: ['Glúteo'],
     equipment: 'Mancuernas',
@@ -1787,7 +2286,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Paso hacia atrás',
   },
   {
-    id: 'ex_199',
+    id: 'ex_254',
     name: 'DB Bulgarian split squat',
     muscleGroups: ['Glúteo'],
     equipment: 'Mancuernas',
@@ -1796,7 +2295,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mucho glúteo de pierna delantera',
   },
   {
-    id: 'ex_200',
+    id: 'ex_255',
     name: 'DB step-up',
     muscleGroups: ['Glúteo'],
     equipment: 'Mancuernas',
@@ -1805,7 +2304,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Similar a barbell step-up',
   },
   {
-    id: 'ex_201',
+    id: 'ex_256',
     name: 'DB Romanian deadlift',
     muscleGroups: ['Glúteo'],
     equipment: 'Mancuernas',
@@ -1814,7 +2313,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Misma mecánica RDL',
   },
   {
-    id: 'ex_202',
+    id: 'ex_257',
     name: 'DB curtsy lunge',
     muscleGroups: ['Glúteo'],
     equipment: 'Mancuernas',
@@ -1823,7 +2322,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Paso cruzado, glúteo medio',
   },
   {
-    id: 'ex_203',
+    id: 'ex_258',
     name: 'KB swing',
     muscleGroups: ['Glúteo'],
     equipment: 'Kettlebell',
@@ -1832,7 +2331,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Potente para glúteo/isquios',
   },
   {
-    id: 'ex_204',
+    id: 'ex_259',
     name: 'KB Romanian deadlift',
     muscleGroups: ['Glúteo'],
     equipment: 'Kettlebell',
@@ -1841,7 +2340,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Similar a DB RDL',
   },
   {
-    id: 'ex_205',
+    id: 'ex_260',
     name: 'KB goblet squat (profundo)',
     muscleGroups: ['Glúteo'],
     equipment: 'Kettlebell',
@@ -1850,7 +2349,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Profundidad = más glúteo',
   },
   {
-    id: 'ex_206',
+    id: 'ex_261',
     name: 'KB reverse lunge',
     muscleGroups: ['Glúteo'],
     equipment: 'Kettlebell',
@@ -1859,7 +2358,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Carga en rack o a los lados',
   },
   {
-    id: 'ex_207',
+    id: 'ex_262',
     name: 'Cable pull-through',
     muscleGroups: ['Glúteo'],
     equipment: 'Polea',
@@ -1868,7 +2367,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Bisagra glúteo-isquio con cable',
   },
   {
-    id: 'ex_208',
+    id: 'ex_263',
     name: 'Cable glute kickback',
     muscleGroups: ['Glúteo'],
     equipment: 'Polea',
@@ -1877,7 +2376,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Extensión pierna atrás, glúteo máximo',
   },
   {
-    id: 'ex_209',
+    id: 'ex_264',
     name: 'Standing hip abduction (cable)',
     muscleGroups: ['Glúteo'],
     equipment: 'Polea',
@@ -1886,7 +2385,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Glúteo medio/min',
   },
   {
-    id: 'ex_210',
+    id: 'ex_265',
     name: 'Standing hip external rotation (cable)',
     muscleGroups: ['Glúteo'],
     equipment: 'Polea',
@@ -1895,7 +2394,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Rotadores externos, glúteo profundo',
   },
   {
-    id: 'ex_211',
+    id: 'ex_266',
     name: 'Band hip thrust',
     muscleGroups: ['Glúteo'],
     equipment: 'Banda',
@@ -1904,7 +2403,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Banded hip thrust en banco/suelo',
   },
   {
-    id: 'ex_212',
+    id: 'ex_267',
     name: 'Band glute bridge',
     muscleGroups: ['Glúteo'],
     equipment: 'Banda',
@@ -1913,7 +2412,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Versión con banda',
   },
   {
-    id: 'ex_213',
+    id: 'ex_268',
     name: 'Banded abduction (sentado)',
     muscleGroups: ['Glúteo'],
     equipment: 'Banda',
@@ -1922,7 +2421,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Sentado abriento rodillas',
   },
   {
-    id: 'ex_214',
+    id: 'ex_269',
     name: 'Banded monster walk',
     muscleGroups: ['Glúteo'],
     equipment: 'Banda',
@@ -1931,7 +2430,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Caminatas laterales/diagonales',
   },
   {
-    id: 'ex_215',
+    id: 'ex_270',
     name: 'Banded side step',
     muscleGroups: ['Glúteo'],
     equipment: 'Banda',
@@ -1940,7 +2439,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Pasos laterales',
   },
   {
-    id: 'ex_216',
+    id: 'ex_271',
     name: 'Hip thrust machine',
     muscleGroups: ['Glúteo'],
     equipment: 'Máquina',
@@ -1949,7 +2448,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Versión guiada con apoyo de hombros',
   },
   {
-    id: 'ex_217',
+    id: 'ex_272',
     name: 'Machine glute bridge',
     muscleGroups: ['Glúteo'],
     equipment: 'Máquina',
@@ -1958,7 +2457,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Similar a hip thrust guiado',
   },
   {
-    id: 'ex_218',
+    id: 'ex_273',
     name: 'Machine glute kickback',
     muscleGroups: ['Glúteo'],
     equipment: 'Máquina',
@@ -1967,7 +2466,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Empujas plataforma hacia atrás',
   },
   {
-    id: 'ex_219',
+    id: 'ex_274',
     name: 'Lever standing glute kickback',
     muscleGroups: ['Glúteo'],
     equipment: 'Máquina/palanca',
@@ -1976,7 +2475,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Patada hacia abajo/atrás en palanca',
   },
   {
-    id: 'ex_220',
+    id: 'ex_275',
     name: 'Kneeling glute kickback (sled)',
     muscleGroups: ['Glúteo'],
     equipment: 'Máquina',
@@ -1985,7 +2484,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Rodillas apoyadas, patada atrás',
   },
   {
-    id: 'ex_221',
+    id: 'ex_276',
     name: '45° hip extension (glute focus)',
     muscleGroups: ['Glúteo'],
     equipment: 'Máquina/banco',
@@ -1994,7 +2493,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Foco glúteo ajustando torso/pies',
   },
   {
-    id: 'ex_222',
+    id: 'ex_277',
     name: 'Reverse hyper machine',
     muscleGroups: ['Glúteo'],
     equipment: 'Máquina',
@@ -2003,7 +2502,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Glúteo máximo + lumbar',
   },
   {
-    id: 'ex_223',
+    id: 'ex_278',
     name: 'Leg press (feet high & wide)',
     muscleGroups: ['Glúteo'],
     equipment: 'Máquina',
@@ -2012,7 +2511,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Pies altos/abiertos = más glúteo',
   },
   {
-    id: 'ex_224',
+    id: 'ex_279',
     name: 'Hack squat (wide, deep)',
     muscleGroups: ['Glúteo'],
     equipment: 'Máquina',
@@ -2021,7 +2520,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Posición que enfatiza cadera',
   },
   {
-    id: 'ex_225',
+    id: 'ex_280',
     name: 'Bodyweight Romanian deadlift',
     muscleGroups: ['Femoral'],
     equipment: 'Peso corporal',
@@ -2030,7 +2529,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Bisagra sin carga, aprendizaje de patrón',
   },
   {
-    id: 'ex_226',
+    id: 'ex_281',
     name: 'Good morning (BW)',
     muscleGroups: ['Femoral'],
     equipment: 'Peso corporal',
@@ -2039,7 +2538,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Manos en cabeza/pecho, foco isquios',
   },
   {
-    id: 'ex_227',
+    id: 'ex_282',
     name: 'Single-leg RDL (BW)',
     muscleGroups: ['Femoral'],
     equipment: 'Peso corporal',
@@ -2048,7 +2547,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Equilibrio + isquios/glúteo',
   },
   {
-    id: 'ex_228',
+    id: 'ex_283',
     name: 'Hip hinge to wall',
     muscleGroups: ['Femoral'],
     equipment: 'Peso corporal',
@@ -2057,7 +2556,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Aprendizaje técnico hacia pared',
   },
   {
-    id: 'ex_229',
+    id: 'ex_284',
     name: 'Sliding leg curl (toalla/discos)',
     muscleGroups: ['Femoral'],
     equipment: 'Peso corporal',
@@ -2066,7 +2565,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Tumbado supino, deslizas talones',
   },
   {
-    id: 'ex_230',
+    id: 'ex_285',
     name: 'Nordic hamstring curl',
     muscleGroups: ['Femoral'],
     equipment: 'Peso corporal',
@@ -2075,7 +2574,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Excéntrico muy potente, prevención lesiones',
   },
   {
-    id: 'ex_231',
+    id: 'ex_286',
     name: 'Assisted Nordic curl',
     muscleGroups: ['Femoral'],
     equipment: 'Peso corporal',
@@ -2084,7 +2583,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Menos carga excéntrica',
   },
   {
-    id: 'ex_232',
+    id: 'ex_287',
     name: 'Self-assisted inverse leg curl',
     muscleGroups: ['Femoral'],
     equipment: 'Peso corporal',
@@ -2093,7 +2592,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Te ayudas con manos en plataforma',
   },
   {
-    id: 'ex_233',
+    id: 'ex_288',
     name: 'Single-leg hanging hamstring bridge',
     muscleGroups: ['Femoral'],
     equipment: 'Peso corporal',
@@ -2102,7 +2601,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Puente colgando bajo barra, unil',
   },
   {
-    id: 'ex_234',
+    id: 'ex_289',
     name: 'Stability ball leg curl (bilateral)',
     muscleGroups: ['Femoral'],
     equipment: 'Peso corporal',
@@ -2111,7 +2610,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Supino, talones sobre balón',
   },
   {
-    id: 'ex_235',
+    id: 'ex_290',
     name: 'Stability ball single-leg curl',
     muscleGroups: ['Femoral'],
     equipment: 'Peso corporal',
@@ -2120,7 +2619,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Unilateral, más intenso',
   },
   {
-    id: 'ex_236',
+    id: 'ex_291',
     name: 'Reverse hyper (BW)',
     muscleGroups: ['Femoral'],
     equipment: 'Peso corporal',
@@ -2129,7 +2628,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Erectores + isquios/glúteo',
   },
   {
-    id: 'ex_237',
+    id: 'ex_292',
     name: 'Barbell Romanian deadlift',
     muscleGroups: ['Femoral'],
     equipment: 'Barra',
@@ -2138,7 +2637,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Rodilla ligeramente flexionada',
   },
   {
-    id: 'ex_238',
+    id: 'ex_293',
     name: 'Stiff-leg deadlift',
     muscleGroups: ['Femoral'],
     equipment: 'Barra',
@@ -2147,7 +2646,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Rodillas casi extendidas, más estiramiento',
   },
   {
-    id: 'ex_239',
+    id: 'ex_294',
     name: 'Conventional deadlift',
     muscleGroups: ['Femoral'],
     equipment: 'Barra',
@@ -2156,7 +2655,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Isquios + glúteo + erectores',
   },
   {
-    id: 'ex_240',
+    id: 'ex_295',
     name: 'Sumo deadlift',
     muscleGroups: ['Femoral'],
     equipment: 'Barra',
@@ -2165,7 +2664,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Más aductores, pero sigue cargando isquios',
   },
   {
-    id: 'ex_241',
+    id: 'ex_296',
     name: 'Deficit deadlift',
     muscleGroups: ['Femoral'],
     equipment: 'Barra',
@@ -2174,7 +2673,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Aumenta ROM, más demanda isquios',
   },
   {
-    id: 'ex_242',
+    id: 'ex_297',
     name: 'Barbell good morning',
     muscleGroups: ['Femoral'],
     equipment: 'Barra',
@@ -2183,7 +2682,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Foco isquios/glúteo con torso inclinado',
   },
   {
-    id: 'ex_243',
+    id: 'ex_298',
     name: 'Seated good morning',
     muscleGroups: ['Femoral'],
     equipment: 'Barra',
@@ -2192,7 +2691,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Más énfasis en isquios a cadera flexionada',
   },
   {
-    id: 'ex_244',
+    id: 'ex_299',
     name: 'Barbell hip thrust (énfasis femoral si pies lejos)',
     muscleGroups: ['Femoral'],
     equipment: 'Barra',
@@ -2201,7 +2700,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Pies algo más alejados = más isquios',
   },
   {
-    id: 'ex_245',
+    id: 'ex_300',
     name: 'Barbell glute bridge (pies más lejos)',
     muscleGroups: ['Femoral'],
     equipment: 'Barra',
@@ -2210,7 +2709,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Similar enfoque que arriba',
   },
   {
-    id: 'ex_246',
+    id: 'ex_301',
     name: 'Barbell leg curl (improvisado)',
     muscleGroups: ['Femoral'],
     equipment: 'Barra',
@@ -2219,7 +2718,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Variante avanzada/menos común',
   },
   {
-    id: 'ex_247',
+    id: 'ex_302',
     name: 'Dumbbell Romanian deadlift',
     muscleGroups: ['Femoral'],
     equipment: 'Mancuernas',
@@ -2228,7 +2727,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Misma mecánica RDL',
   },
   {
-    id: 'ex_248',
+    id: 'ex_303',
     name: 'Dumbbell stiff-leg deadlift',
     muscleGroups: ['Femoral'],
     equipment: 'Mancuernas',
@@ -2237,7 +2736,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Piernas casi rectas',
   },
   {
-    id: 'ex_249',
+    id: 'ex_304',
     name: 'Single-leg DB RDL',
     muscleGroups: ['Femoral'],
     equipment: 'Mancuernas',
@@ -2246,7 +2745,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Control y estabilidad altos',
   },
   {
-    id: 'ex_250',
+    id: 'ex_305',
     name: 'DB leg curl',
     muscleGroups: ['Femoral'],
     equipment: 'Mancuernas',
@@ -2255,7 +2754,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mancuerna entre pies',
   },
   {
-    id: 'ex_251',
+    id: 'ex_306',
     name: 'DB hamstring slide (sobre toalla)',
     muscleGroups: ['Femoral'],
     equipment: 'Mancuernas/peso',
@@ -2264,7 +2763,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Variante deslizante con carga',
   },
   {
-    id: 'ex_252',
+    id: 'ex_307',
     name: 'KB Romanian deadlift',
     muscleGroups: ['Femoral'],
     equipment: 'Kettlebell',
@@ -2273,7 +2772,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Similar a DB RDL',
   },
   {
-    id: 'ex_253',
+    id: 'ex_308',
     name: 'KB swing (énfasis femoral)',
     muscleGroups: ['Femoral'],
     equipment: 'Kettlebell',
@@ -2282,7 +2781,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mayor bisagra cadera vs rodilla',
   },
   {
-    id: 'ex_254',
+    id: 'ex_309',
     name: 'Cable hamstring curl (standing)',
     muscleGroups: ['Femoral'],
     equipment: 'Polea',
@@ -2291,7 +2790,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'De pie, flexionas rodilla hacia atrás',
   },
   {
-    id: 'ex_255',
+    id: 'ex_310',
     name: 'Cable hamstring curl (prone)',
     muscleGroups: ['Femoral'],
     equipment: 'Polea',
@@ -2300,7 +2799,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Imitando lying leg curl',
   },
   {
-    id: 'ex_256',
+    id: 'ex_311',
     name: 'Cable single-leg RDL',
     muscleGroups: ['Femoral'],
     equipment: 'Polea',
@@ -2309,7 +2808,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Tracción hacia atrás, patrón RDL asistido',
   },
   {
-    id: 'ex_257',
+    id: 'ex_312',
     name: 'Band leg curl (prone)',
     muscleGroups: ['Femoral'],
     equipment: 'Banda',
@@ -2318,7 +2817,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Alternativa a máquina de curl',
   },
   {
-    id: 'ex_258',
+    id: 'ex_313',
     name: 'Band good morning',
     muscleGroups: ['Femoral'],
     equipment: 'Banda',
@@ -2327,7 +2826,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Semejante a good morning ligero',
   },
   {
-    id: 'ex_259',
+    id: 'ex_314',
     name: 'Band Romanian deadlift',
     muscleGroups: ['Femoral'],
     equipment: 'Banda',
@@ -2336,7 +2835,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Resistencia creciente',
   },
   {
-    id: 'ex_260',
+    id: 'ex_315',
     name: '45° hyperextension (BW)',
     muscleGroups: ['Femoral'],
     equipment: 'Máquina/banco 45°',
@@ -2344,7 +2843,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     subtype: 'Isquios + erectores; se puede cargar',
   },
   {
-    id: 'ex_261',
+    id: 'ex_316',
     name: 'Weighted 45° hyperextension',
     muscleGroups: ['Femoral'],
     equipment: 'Barra/mancuerna/disco',
@@ -2353,7 +2852,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Con carga al pecho/cuello',
   },
   {
-    id: 'ex_262',
+    id: 'ex_317',
     name: 'Back extension (horizontal bench)',
     muscleGroups: ['Femoral'],
     equipment: 'Banco',
@@ -2362,7 +2861,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Dependiendo técnica, más isquio o lumbar',
   },
   {
-    id: 'ex_263',
+    id: 'ex_318',
     name: 'Weighted hyperextension',
     muscleGroups: ['Femoral'],
     equipment: 'Barra/disco',
@@ -2371,7 +2870,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Versión más intensa',
   },
   {
-    id: 'ex_264',
+    id: 'ex_319',
     name: 'Lying leg curl machine',
     muscleGroups: ['Femoral'],
     equipment: 'Máquina',
@@ -2380,7 +2879,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Clásico curl tumbado',
   },
   {
-    id: 'ex_265',
+    id: 'ex_320',
     name: 'Lying leg curl (feet in/out)',
     muscleGroups: ['Femoral'],
     equipment: 'Máquina',
@@ -2389,7 +2888,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Rotación pies = inner/outer hamstrings',
   },
   {
-    id: 'ex_266',
+    id: 'ex_321',
     name: 'Seated leg curl machine',
     muscleGroups: ['Femoral'],
     equipment: 'Máquina',
@@ -2398,7 +2897,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Aísla fuertemente isquios',
   },
   {
-    id: 'ex_267',
+    id: 'ex_322',
     name: 'Standing leg curl machine',
     muscleGroups: ['Femoral'],
     equipment: 'Máquina',
@@ -2407,7 +2906,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Aísla cada pierna',
   },
   {
-    id: 'ex_268',
+    id: 'ex_323',
     name: 'Glute-ham raise (GHR)',
     muscleGroups: ['Femoral'],
     equipment: 'Máquina',
@@ -2416,7 +2915,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Muy demandante, excéntrico fuerte',
   },
   {
-    id: 'ex_269',
+    id: 'ex_324',
     name: 'Assisted glute-ham raise',
     muscleGroups: ['Femoral'],
     equipment: 'Máquina',
@@ -2425,7 +2924,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Menos carga usando brazos',
   },
   {
-    id: 'ex_270',
+    id: 'ex_325',
     name: 'Single-leg GHR (avanzado)',
     muscleGroups: ['Femoral'],
     equipment: 'Máquina',
@@ -2434,7 +2933,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Extremadamente avanzado',
   },
   {
-    id: 'ex_271',
+    id: 'ex_326',
     name: 'Reverse hyper machine',
     muscleGroups: ['Femoral'],
     equipment: 'Máquina',
@@ -2443,7 +2942,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Isquios + glúteo + lumbar',
   },
   {
-    id: 'ex_272',
+    id: 'ex_327',
     name: 'Air squat',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Peso corporal',
@@ -2452,7 +2951,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Sentadilla básica sin carga',
   },
   {
-    id: 'ex_273',
+    id: 'ex_328',
     name: 'Jump squat',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Peso corporal',
@@ -2461,7 +2960,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Sentadilla con salto explosivo',
   },
   {
-    id: 'ex_274',
+    id: 'ex_329',
     name: 'Half squat (BW)',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Peso corporal',
@@ -2470,7 +2969,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'ROM parcial, menos demanda',
   },
   {
-    id: 'ex_275',
+    id: 'ex_330',
     name: 'Full deep squat (BW)',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Peso corporal',
@@ -2479,7 +2978,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Glúteo + cuádriceps, movilidad alta',
   },
   {
-    id: 'ex_276',
+    id: 'ex_331',
     name: 'Wall sit',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Peso corporal',
@@ -2488,7 +2987,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mantener 90° en rodillas',
   },
   {
-    id: 'ex_277',
+    id: 'ex_332',
     name: 'Assisted sissy squat (BW)',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Peso corporal',
@@ -2497,7 +2996,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Rodillas adelante, torso atrás',
   },
   {
-    id: 'ex_278',
+    id: 'ex_333',
     name: 'Free sissy squat (BW)',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Peso corporal',
@@ -2506,7 +3005,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Muy exigente, gran tensión en cuádriceps',
   },
   {
-    id: 'ex_279',
+    id: 'ex_334',
     name: 'Kneeling quad extension (BW)',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Peso corporal',
@@ -2515,7 +3014,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Desde rodillas hacia atrás y adelante',
   },
   {
-    id: 'ex_280',
+    id: 'ex_335',
     name: 'Step-up (BW)',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Peso corporal',
@@ -2524,7 +3023,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Altura define énfasis cuádriceps/glúteo',
   },
   {
-    id: 'ex_281',
+    id: 'ex_336',
     name: 'Step-down',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Peso corporal',
@@ -2533,7 +3032,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Control excéntrico bajando del banco',
   },
   {
-    id: 'ex_282',
+    id: 'ex_337',
     name: 'Walking lunge (BW)',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Peso corporal',
@@ -2542,7 +3041,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Adelante/caminar, quad + glúteo',
   },
   {
-    id: 'ex_283',
+    id: 'ex_338',
     name: 'Reverse lunge (BW)',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Peso corporal',
@@ -2551,7 +3050,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Paso atrás, algo más cadera',
   },
   {
-    id: 'ex_284',
+    id: 'ex_339',
     name: 'Split squat (BW)',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Peso corporal',
@@ -2560,7 +3059,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Postura fija, foco quad/glúteo',
   },
   {
-    id: 'ex_285',
+    id: 'ex_340',
     name: 'Bulgarian split squat (BW)',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Peso corporal',
@@ -2569,7 +3068,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mucho quad y glúteo pierna delantera',
   },
   {
-    id: 'ex_286',
+    id: 'ex_341',
     name: 'Lateral/side lunge (BW)',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Peso corporal',
@@ -2578,7 +3077,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Cuádriceps + aductores',
   },
   {
-    id: 'ex_287',
+    id: 'ex_342',
     name: 'Pistol squat (BW)',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Peso corporal',
@@ -2587,7 +3086,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Muy avanzada, gran demanda quad',
   },
   {
-    id: 'ex_288',
+    id: 'ex_343',
     name: 'Heels-elevated squat (BW)',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Peso corporal',
@@ -2596,16 +3095,18 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Más énfasis cuádriceps',
   },
   {
-    id: 'ex_289',
+    id: 'ex_344',
     name: 'Barbell back squat (high bar)',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Barra',
     pattern: 'Sentadilla',
     subtype: 'Libre',
     description: 'Muy clásico para cuádriceps',
+    mediaUrl: 'https://vptrkkpozgpwwpxfwltn.supabase.co/storage/v1/object/public/default-exercises/squat.png',
+    mediaType: 'image',
   },
   {
-    id: 'ex_290',
+    id: 'ex_345',
     name: 'Barbell back squat (low bar)',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Barra',
@@ -2614,7 +3115,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Más cadera, pero quad sigue activo',
   },
   {
-    id: 'ex_291',
+    id: 'ex_346',
     name: 'Front squat',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Barra',
@@ -2623,7 +3124,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Más torso vertical, más cuádriceps',
   },
   {
-    id: 'ex_292',
+    id: 'ex_347',
     name: 'Box squat (barra)',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Barra',
@@ -2632,7 +3133,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Control ROM, se usa según altura',
   },
   {
-    id: 'ex_293',
+    id: 'ex_348',
     name: 'Pause squat',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Barra',
@@ -2641,7 +3142,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Pausa en el fondo, más tensión',
   },
   {
-    id: 'ex_294',
+    id: 'ex_349',
     name: 'Tempo squat',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Barra',
@@ -2650,7 +3151,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Descenso/controlado, foco en tiempo bajo tensión',
   },
   {
-    id: 'ex_295',
+    id: 'ex_350',
     name: 'Zercher squat',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Barra',
@@ -2659,7 +3160,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Cuádriceps + core',
   },
   {
-    id: 'ex_296',
+    id: 'ex_351',
     name: 'Barbell hack squat (trasero)',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Barra',
@@ -2668,7 +3169,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Variante clásica estilo \'hack\'',
   },
   {
-    id: 'ex_297',
+    id: 'ex_352',
     name: 'Barbell lunge',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Barra',
@@ -2677,7 +3178,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Adelante/caminar, quad + glúteo',
   },
   {
-    id: 'ex_298',
+    id: 'ex_353',
     name: 'Barbell reverse lunge',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Barra',
@@ -2686,7 +3187,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Paso atrás',
   },
   {
-    id: 'ex_299',
+    id: 'ex_354',
     name: 'Barbell split squat',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Barra',
@@ -2695,7 +3196,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Similar a DB split pero con barra',
   },
   {
-    id: 'ex_300',
+    id: 'ex_355',
     name: 'Barbell step-up',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Barra',
@@ -2704,7 +3205,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Subida al banco con barra',
   },
   {
-    id: 'ex_301',
+    id: 'ex_356',
     name: 'Goblet squat',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Mancuernas/Kettlebell',
@@ -2713,7 +3214,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Buen patrón para quad',
   },
   {
-    id: 'ex_302',
+    id: 'ex_357',
     name: 'DB front squat',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Mancuernas',
@@ -2722,7 +3223,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mancuernas en hombros',
   },
   {
-    id: 'ex_303',
+    id: 'ex_358',
     name: 'DB squat (a los lados)',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Mancuernas',
@@ -2731,7 +3232,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Tipo \'suitcase\'',
   },
   {
-    id: 'ex_304',
+    id: 'ex_359',
     name: 'DB walking lunge',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Mancuernas',
@@ -2740,7 +3241,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Clásico para quad',
   },
   {
-    id: 'ex_305',
+    id: 'ex_360',
     name: 'DB reverse lunge',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Mancuernas',
@@ -2749,7 +3250,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Paso atrás',
   },
   {
-    id: 'ex_306',
+    id: 'ex_361',
     name: 'DB Bulgarian split squat',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Mancuernas',
@@ -2758,7 +3259,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Muy usado para quad',
   },
   {
-    id: 'ex_307',
+    id: 'ex_362',
     name: 'DB step-up',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Mancuernas',
@@ -2767,7 +3268,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Buen ejercicio unilateral',
   },
   {
-    id: 'ex_308',
+    id: 'ex_363',
     name: 'DB lateral lunge',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Mancuernas',
@@ -2776,7 +3277,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Quad + aductores',
   },
   {
-    id: 'ex_309',
+    id: 'ex_364',
     name: 'DB squat jump',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Mancuernas',
@@ -2785,7 +3286,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Saltos con ligera carga',
   },
   {
-    id: 'ex_310',
+    id: 'ex_365',
     name: 'Sissy squat (weighted)',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Mancuernas/disco',
@@ -2794,7 +3295,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Sissy con carga en pecho',
   },
   {
-    id: 'ex_311',
+    id: 'ex_366',
     name: 'KB goblet squat',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Kettlebell',
@@ -2803,7 +3304,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Similar a DB goblet',
   },
   {
-    id: 'ex_312',
+    id: 'ex_367',
     name: 'KB front rack squat',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Kettlebell',
@@ -2812,7 +3313,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Kettlebells en rack',
   },
   {
-    id: 'ex_313',
+    id: 'ex_368',
     name: 'KB lunge (fwd/rev)',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Kettlebell',
@@ -2821,7 +3322,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Una o dos KB en rack o a lados',
   },
   {
-    id: 'ex_314',
+    id: 'ex_369',
     name: 'KB step-up',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Kettlebell',
@@ -2830,7 +3331,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Variación de step-up',
   },
   {
-    id: 'ex_315',
+    id: 'ex_370',
     name: 'Cable squat',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Polea',
@@ -2839,7 +3340,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Squat tirando del cable adelante',
   },
   {
-    id: 'ex_316',
+    id: 'ex_371',
     name: 'Cable front squat',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Polea',
@@ -2848,7 +3349,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Cable en frente, patrón front squat',
   },
   {
-    id: 'ex_317',
+    id: 'ex_372',
     name: 'Cable split squat',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Polea',
@@ -2857,7 +3358,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Cable frente al cuerpo, estabilidad extra',
   },
   {
-    id: 'ex_318',
+    id: 'ex_373',
     name: 'Cable step-up',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Polea',
@@ -2866,7 +3367,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Menos habitual, pero posible',
   },
   {
-    id: 'ex_319',
+    id: 'ex_374',
     name: 'Standing cable leg extension',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Polea',
@@ -2875,7 +3376,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Cuádriceps unilateral de pie',
   },
   {
-    id: 'ex_320',
+    id: 'ex_375',
     name: 'Resistance band squat',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Banda',
@@ -2884,7 +3385,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Ayuda o resistencia extra',
   },
   {
-    id: 'ex_321',
+    id: 'ex_376',
     name: 'Band-resisted squat jump',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Banda',
@@ -2893,7 +3394,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Saltos con resistencia',
   },
   {
-    id: 'ex_322',
+    id: 'ex_377',
     name: 'Band leg extension (anclaje)',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Banda',
@@ -2902,7 +3403,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Variante casera de leg extension',
   },
   {
-    id: 'ex_323',
+    id: 'ex_378',
     name: 'Leg extension machine',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Máquina',
@@ -2911,7 +3412,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Aíslante de cuádriceps',
   },
   {
-    id: 'ex_324',
+    id: 'ex_379',
     name: 'Single-leg leg extension',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Máquina',
@@ -2920,7 +3421,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Unilateral, corrige desbalances',
   },
   {
-    id: 'ex_325',
+    id: 'ex_380',
     name: '45° leg press (feet low)',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Máquina',
@@ -2929,7 +3430,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Pies más bajos = más cuádriceps',
   },
   {
-    id: 'ex_326',
+    id: 'ex_381',
     name: '45° leg press (neutral)',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Máquina',
@@ -2938,7 +3439,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Trabajo global pierna, buen quad',
   },
   {
-    id: 'ex_327',
+    id: 'ex_382',
     name: 'Horizontal leg press',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Máquina',
@@ -2947,7 +3448,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Similar enfoque al 45°',
   },
   {
-    id: 'ex_328',
+    id: 'ex_383',
     name: 'Single-leg press',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Máquina',
@@ -2956,7 +3457,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Más énfasis cada pierna',
   },
   {
-    id: 'ex_329',
+    id: 'ex_384',
     name: 'Hack squat machine',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Máquina',
@@ -2965,7 +3466,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Gran enfoque en cuádriceps según pies',
   },
   {
-    id: 'ex_330',
+    id: 'ex_385',
     name: 'V-squat machine',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Máquina',
@@ -2974,7 +3475,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Variante hack/press híbrida',
   },
   {
-    id: 'ex_331',
+    id: 'ex_386',
     name: 'Pendulum squat',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Máquina',
@@ -2983,7 +3484,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Permite gran ROM quad',
   },
   {
-    id: 'ex_332',
+    id: 'ex_387',
     name: 'Smith machine squat',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Smith',
@@ -2992,7 +3493,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Sentadilla guiada',
   },
   {
-    id: 'ex_333',
+    id: 'ex_388',
     name: 'Smith front squat',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Smith',
@@ -3001,7 +3502,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Más fácil el equilibrio',
   },
   {
-    id: 'ex_334',
+    id: 'ex_389',
     name: 'Smith split squat / Bulgarian',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Smith',
@@ -3010,7 +3511,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Excelente para quad unilateral',
   },
   {
-    id: 'ex_335',
+    id: 'ex_390',
     name: 'Smith hack squat (barra atrás)',
     muscleGroups: ['Cuádriceps'],
     equipment: 'Smith',
@@ -3019,7 +3520,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Simula hack',
   },
   {
-    id: 'ex_336',
+    id: 'ex_391',
     name: 'Pike push-up',
     muscleGroups: ['Hombro'],
     equipment: 'Peso corporal',
@@ -3028,7 +3529,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Versión inclinada, énfasis deltoide anterior',
   },
   {
-    id: 'ex_337',
+    id: 'ex_392',
     name: 'Elevated pike push-up',
     muscleGroups: ['Hombro'],
     equipment: 'Peso corporal',
@@ -3037,7 +3538,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Más vertical, más hombro',
   },
   {
-    id: 'ex_338',
+    id: 'ex_393',
     name: 'Handstand push-up (pared)',
     muscleGroups: ['Hombro'],
     equipment: 'Peso corporal',
@@ -3046,7 +3547,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Muy demandante, anterior/lateral',
   },
   {
-    id: 'ex_339',
+    id: 'ex_394',
     name: 'Free handstand push-up',
     muscleGroups: ['Hombro'],
     equipment: 'Peso corporal',
@@ -3055,7 +3556,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Variante sin apoyo, muy avanzada',
   },
   {
-    id: 'ex_340',
+    id: 'ex_395',
     name: 'Decline push-up (hombro)',
     muscleGroups: ['Hombro'],
     equipment: 'Peso corporal',
@@ -3064,7 +3565,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Aumenta componente hombro',
   },
   {
-    id: 'ex_341',
+    id: 'ex_396',
     name: 'Planche lean push-up',
     muscleGroups: ['Hombro'],
     equipment: 'Peso corporal',
@@ -3073,7 +3574,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mucho deltoide anterior',
   },
   {
-    id: 'ex_342',
+    id: 'ex_397',
     name: 'Y-T-W en suelo',
     muscleGroups: ['Hombro'],
     equipment: 'Peso corporal',
@@ -3082,7 +3583,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Deltoide posterior + trapecio',
   },
   {
-    id: 'ex_343',
+    id: 'ex_398',
     name: 'Angled side bridge (deltoide)',
     muscleGroups: ['Hombro'],
     equipment: 'Peso corporal',
@@ -3091,7 +3592,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Involucra deltoide lateral',
   },
   {
-    id: 'ex_344',
+    id: 'ex_399',
     name: 'Barbell overhead press (standing)',
     muscleGroups: ['Hombro'],
     equipment: 'Barra',
@@ -3100,7 +3601,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Press militar clásico',
   },
   {
-    id: 'ex_345',
+    id: 'ex_400',
     name: 'Seated barbell overhead press',
     muscleGroups: ['Hombro'],
     equipment: 'Barra',
@@ -3109,7 +3610,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Menos demanda de core',
   },
   {
-    id: 'ex_346',
+    id: 'ex_401',
     name: 'Push press',
     muscleGroups: ['Hombro'],
     equipment: 'Barra',
@@ -3118,7 +3619,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Usa impulso de piernas',
   },
   {
-    id: 'ex_347',
+    id: 'ex_402',
     name: 'Behind-the-neck press',
     muscleGroups: ['Hombro'],
     equipment: 'Barra',
@@ -3127,7 +3628,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Más estiramiento, no para todos',
   },
   {
-    id: 'ex_348',
+    id: 'ex_403',
     name: 'Arnold press (barra corta)',
     muscleGroups: ['Hombro'],
     equipment: 'Barra corta',
@@ -3136,7 +3637,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Menos común, rotación similar a DB',
   },
   {
-    id: 'ex_349',
+    id: 'ex_404',
     name: 'Upright row (barra)',
     muscleGroups: ['Hombro'],
     equipment: 'Barra',
@@ -3145,7 +3646,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Deltoide lateral + trapecio',
   },
   {
-    id: 'ex_350',
+    id: 'ex_405',
     name: 'Barbell front raise',
     muscleGroups: ['Hombro'],
     equipment: 'Barra',
@@ -3154,7 +3655,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Aislante deltoide anterior',
   },
   {
-    id: 'ex_351',
+    id: 'ex_406',
     name: 'Barbell rear delt row',
     muscleGroups: ['Hombro'],
     equipment: 'Barra',
@@ -3163,7 +3664,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Tronco inclinado, foco deltoide posterior',
   },
   {
-    id: 'ex_352',
+    id: 'ex_407',
     name: 'Smith machine shoulder press',
     muscleGroups: ['Hombro'],
     equipment: 'Smith',
@@ -3172,7 +3673,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Trayectoria guiada',
   },
   {
-    id: 'ex_353',
+    id: 'ex_408',
     name: 'Smith high-incline press (hombro)',
     muscleGroups: ['Hombro'],
     equipment: 'Smith',
@@ -3181,7 +3682,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Banca muy inclinada, casi hombro',
   },
   {
-    id: 'ex_354',
+    id: 'ex_409',
     name: 'Barbell overhead carry',
     muscleGroups: ['Hombro'],
     equipment: 'Barra',
@@ -3190,7 +3691,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mantener barra por encima de cabeza',
   },
   {
-    id: 'ex_355',
+    id: 'ex_410',
     name: 'DB shoulder press (standing)',
     muscleGroups: ['Hombro'],
     equipment: 'Mancuernas',
@@ -3199,7 +3700,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Anterior/lateral',
   },
   {
-    id: 'ex_356',
+    id: 'ex_411',
     name: 'Seated DB shoulder press',
     muscleGroups: ['Hombro'],
     equipment: 'Mancuernas',
@@ -3208,7 +3709,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Variante muy usada',
   },
   {
-    id: 'ex_357',
+    id: 'ex_412',
     name: 'One-arm DB shoulder press',
     muscleGroups: ['Hombro'],
     equipment: 'Mancuernas',
@@ -3217,7 +3718,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Unilateral, más core',
   },
   {
-    id: 'ex_358',
+    id: 'ex_413',
     name: 'Arnold press (DB)',
     muscleGroups: ['Hombro'],
     equipment: 'Mancuernas',
@@ -3226,7 +3727,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Rotación interna-externa, mucho anterior',
   },
   {
-    id: 'ex_359',
+    id: 'ex_414',
     name: 'DB push press',
     muscleGroups: ['Hombro'],
     equipment: 'Mancuernas',
@@ -3235,7 +3736,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Similar a push press con barra',
   },
   {
-    id: 'ex_360',
+    id: 'ex_415',
     name: 'DB lateral raise (de pie)',
     muscleGroups: ['Hombro'],
     equipment: 'Mancuernas',
@@ -3244,7 +3745,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Deltoide lateral',
   },
   {
-    id: 'ex_361',
+    id: 'ex_416',
     name: 'Seated DB lateral raise',
     muscleGroups: ['Hombro'],
     equipment: 'Mancuernas',
@@ -3253,7 +3754,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Menos balanceo',
   },
   {
-    id: 'ex_362',
+    id: 'ex_417',
     name: 'Leaning lateral raise',
     muscleGroups: ['Hombro'],
     equipment: 'Mancuernas',
@@ -3262,7 +3763,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mayor ROM en lateral',
   },
   {
-    id: 'ex_363',
+    id: 'ex_418',
     name: 'Incline lateral raise (cuerpo inclinado)',
     muscleGroups: ['Hombro'],
     equipment: 'Mancuernas',
@@ -3271,7 +3772,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Cambia curva de fuerza',
   },
   {
-    id: 'ex_364',
+    id: 'ex_419',
     name: 'DB front raise',
     muscleGroups: ['Hombro'],
     equipment: 'Mancuernas',
@@ -3280,7 +3781,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Deltoide anterior',
   },
   {
-    id: 'ex_365',
+    id: 'ex_420',
     name: 'Alternating front raise',
     muscleGroups: ['Hombro'],
     equipment: 'Mancuernas',
@@ -3289,7 +3790,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Un brazo a la vez',
   },
   {
-    id: 'ex_366',
+    id: 'ex_421',
     name: 'DB rear delt fly (bent-over)',
     muscleGroups: ['Hombro'],
     equipment: 'Mancuernas',
@@ -3298,7 +3799,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Clásico posterior',
   },
   {
-    id: 'ex_367',
+    id: 'ex_422',
     name: 'Seated bent-over rear delt raise',
     muscleGroups: ['Hombro'],
     equipment: 'Mancuernas',
@@ -3307,7 +3808,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Deltoide posterior puro',
   },
   {
-    id: 'ex_368',
+    id: 'ex_423',
     name: 'Lying rear lateral raise',
     muscleGroups: ['Hombro'],
     equipment: 'Mancuernas',
@@ -3316,7 +3817,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Aísla bien posterior',
   },
   {
-    id: 'ex_369',
+    id: 'ex_424',
     name: 'DB rear delt row',
     muscleGroups: ['Hombro'],
     equipment: 'Mancuernas',
@@ -3325,7 +3826,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Remo alto hacia afuera',
   },
   {
-    id: 'ex_370',
+    id: 'ex_425',
     name: 'Cuban press',
     muscleGroups: ['Hombro'],
     equipment: 'Mancuernas',
@@ -3334,7 +3835,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Rotación externa + press',
   },
   {
-    id: 'ex_371',
+    id: 'ex_426',
     name: 'DB \'Y-raise\'',
     muscleGroups: ['Hombro'],
     equipment: 'Mancuernas',
@@ -3343,7 +3844,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Trapecio superior + deltoide',
   },
   {
-    id: 'ex_372',
+    id: 'ex_427',
     name: 'DB \'W-raise\'',
     muscleGroups: ['Hombro'],
     equipment: 'Mancuernas',
@@ -3352,7 +3853,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Manguito rotador + deltoide',
   },
   {
-    id: 'ex_373',
+    id: 'ex_428',
     name: 'KB overhead press',
     muscleGroups: ['Hombro'],
     equipment: 'Kettlebell',
@@ -3361,7 +3862,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Center of mass distinto, estabilidad',
   },
   {
-    id: 'ex_374',
+    id: 'ex_429',
     name: 'KB push press',
     muscleGroups: ['Hombro'],
     equipment: 'Kettlebell',
@@ -3370,7 +3871,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Explosivo',
   },
   {
-    id: 'ex_375',
+    id: 'ex_430',
     name: 'KB bottom-up press',
     muscleGroups: ['Hombro'],
     equipment: 'Kettlebell',
@@ -3379,7 +3880,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'GRAN estabilidad muñeca/hombro',
   },
   {
-    id: 'ex_376',
+    id: 'ex_431',
     name: 'KB lateral raise',
     muscleGroups: ['Hombro'],
     equipment: 'Kettlebell',
@@ -3388,7 +3889,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Similar a DB lateral',
   },
   {
-    id: 'ex_377',
+    id: 'ex_432',
     name: 'KB front raise',
     muscleGroups: ['Hombro'],
     equipment: 'Kettlebell',
@@ -3397,7 +3898,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Deltoide anterior',
   },
   {
-    id: 'ex_378',
+    id: 'ex_433',
     name: 'Band shoulder press',
     muscleGroups: ['Hombro'],
     equipment: 'Banda',
@@ -3406,7 +3907,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Alternativa casera al press',
   },
   {
-    id: 'ex_379',
+    id: 'ex_434',
     name: 'Band front raise',
     muscleGroups: ['Hombro'],
     equipment: 'Banda',
@@ -3415,7 +3916,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Aislante anterior',
   },
   {
-    id: 'ex_380',
+    id: 'ex_435',
     name: 'Band lateral raise',
     muscleGroups: ['Hombro'],
     equipment: 'Banda',
@@ -3424,7 +3925,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Aislante lateral',
   },
   {
-    id: 'ex_381',
+    id: 'ex_436',
     name: 'Band pull-apart (altura hombro)',
     muscleGroups: ['Hombro'],
     equipment: 'Banda',
@@ -3433,7 +3934,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Deltoide posterior + trapecio',
   },
   {
-    id: 'ex_382',
+    id: 'ex_437',
     name: 'Band face pull',
     muscleGroups: ['Hombro'],
     equipment: 'Banda',
@@ -3442,7 +3943,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Similar al cable face pull',
   },
   {
-    id: 'ex_383',
+    id: 'ex_438',
     name: 'Cable shoulder press',
     muscleGroups: ['Hombro'],
     equipment: 'Polea',
@@ -3451,7 +3952,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Menos común pero viable',
   },
   {
-    id: 'ex_384',
+    id: 'ex_439',
     name: 'Cable lateral raise (low pulley)',
     muscleGroups: ['Hombro'],
     equipment: 'Polea',
@@ -3460,7 +3961,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Excelente tensión continua',
   },
   {
-    id: 'ex_385',
+    id: 'ex_440',
     name: 'One-arm cable lateral raise',
     muscleGroups: ['Hombro'],
     equipment: 'Polea',
@@ -3469,7 +3970,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Unilateral',
   },
   {
-    id: 'ex_386',
+    id: 'ex_441',
     name: 'Cable front raise',
     muscleGroups: ['Hombro'],
     equipment: 'Polea',
@@ -3478,7 +3979,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Barra/cuerda',
   },
   {
-    id: 'ex_387',
+    id: 'ex_442',
     name: 'High cable front raise',
     muscleGroups: ['Hombro'],
     equipment: 'Polea',
@@ -3487,7 +3988,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Desde alto hacia abajo',
   },
   {
-    id: 'ex_388',
+    id: 'ex_443',
     name: 'Cable rear delt fly',
     muscleGroups: ['Hombro'],
     equipment: 'Polea',
@@ -3496,7 +3997,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'De pie, brazos cruzados',
   },
   {
-    id: 'ex_389',
+    id: 'ex_444',
     name: 'Face pull (cable)',
     muscleGroups: ['Hombro'],
     equipment: 'Polea',
@@ -3505,7 +4006,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Deltoide posterior + trapecio',
   },
   {
-    id: 'ex_390',
+    id: 'ex_445',
     name: 'Cable Y-raise',
     muscleGroups: ['Hombro'],
     equipment: 'Polea',
@@ -3514,7 +4015,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Similar a DB Y-raise',
   },
   {
-    id: 'ex_391',
+    id: 'ex_446',
     name: 'Smith machine shoulder press',
     muscleGroups: ['Hombro'],
     equipment: 'Máquina Smith',
@@ -3523,7 +4024,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Deltoide anterior/lateral',
   },
   {
-    id: 'ex_392',
+    id: 'ex_447',
     name: 'Smith high incline press',
     muscleGroups: ['Hombro'],
     equipment: 'Máquina Smith',
@@ -3532,7 +4033,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Transición pecho-hombro',
   },
   {
-    id: 'ex_393',
+    id: 'ex_448',
     name: 'Shoulder press machine (selectorized)',
     muscleGroups: ['Hombro'],
     equipment: 'Máquina',
@@ -3541,7 +4042,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Press de hombro clásico',
   },
   {
-    id: 'ex_394',
+    id: 'ex_449',
     name: 'Plate-loaded shoulder press',
     muscleGroups: ['Hombro'],
     equipment: 'Máquina',
@@ -3550,7 +4051,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Palancas independientes',
   },
   {
-    id: 'ex_395',
+    id: 'ex_450',
     name: 'Lateral raise machine',
     muscleGroups: ['Hombro'],
     equipment: 'Máquina',
@@ -3559,7 +4060,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Deltoide lateral',
   },
   {
-    id: 'ex_396',
+    id: 'ex_451',
     name: 'Reverse pec-deck machine',
     muscleGroups: ['Hombro'],
     equipment: 'Máquina',
@@ -3568,7 +4069,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Deltoide posterior',
   },
   {
-    id: 'ex_397',
+    id: 'ex_452',
     name: 'Cable/lever upright row machine',
     muscleGroups: ['Hombro'],
     equipment: 'Máquina',
@@ -3577,7 +4078,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Más control en upright row',
   },
   {
-    id: 'ex_398',
+    id: 'ex_453',
     name: 'Sled shoulder press',
     muscleGroups: ['Hombro'],
     equipment: 'Máquina tipo sled',
@@ -3586,7 +4087,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Palanca empujando hacia arriba',
   },
   {
-    id: 'ex_399',
+    id: 'ex_454',
     name: 'Dead hang',
     muscleGroups: ['Antebrazo'],
     equipment: 'Peso corporal',
@@ -3595,7 +4096,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Colgarse pasivo, flexores de dedos/antebrazo',
   },
   {
-    id: 'ex_400',
+    id: 'ex_455',
     name: 'Active hang',
     muscleGroups: ['Antebrazo'],
     equipment: 'Peso corporal',
@@ -3604,7 +4105,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Escápulas activas, más tensión global',
   },
   {
-    id: 'ex_401',
+    id: 'ex_456',
     name: 'Towel hang',
     muscleGroups: ['Antebrazo'],
     equipment: 'Peso corporal',
@@ -3613,7 +4114,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mucho trabajo de agarre',
   },
   {
-    id: 'ex_402',
+    id: 'ex_457',
     name: 'One-arm hang',
     muscleGroups: ['Antebrazo'],
     equipment: 'Peso corporal',
@@ -3622,7 +4123,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Muy avanzado, gran carga unilateral',
   },
   {
-    id: 'ex_403',
+    id: 'ex_458',
     name: 'Finger-tip push-up (avanzado)',
     muscleGroups: ['Antebrazo'],
     equipment: 'Peso corporal',
@@ -3631,7 +4132,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Muy demandante dedos/antebrazo',
   },
   {
-    id: 'ex_404',
+    id: 'ex_459',
     name: 'Crab walk',
     muscleGroups: ['Antebrazo'],
     equipment: 'Peso corporal',
@@ -3640,7 +4141,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Carga muñecas y antebrazos',
   },
   {
-    id: 'ex_405',
+    id: 'ex_460',
     name: 'Barbell wrist curl (sentado, antebrazos en muslos)',
     muscleGroups: ['Antebrazo'],
     equipment: 'Barra',
@@ -3649,7 +4150,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Palma hacia arriba, flexores',
   },
   {
-    id: 'ex_406',
+    id: 'ex_461',
     name: 'Standing barbell wrist curl (frente)',
     muscleGroups: ['Antebrazo'],
     equipment: 'Barra',
@@ -3658,7 +4159,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'De pie, barra frente muslos',
   },
   {
-    id: 'ex_407',
+    id: 'ex_462',
     name: 'Behind-the-back barbell wrist curl',
     muscleGroups: ['Antebrazo'],
     equipment: 'Barra',
@@ -3667,7 +4168,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Barra detrás, ROM distinto',
   },
   {
-    id: 'ex_408',
+    id: 'ex_463',
     name: 'Barbell reverse wrist curl',
     muscleGroups: ['Antebrazo'],
     equipment: 'Barra',
@@ -3676,7 +4177,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Palmas abajo, extensores',
   },
   {
-    id: 'ex_409',
+    id: 'ex_464',
     name: 'Prone wrist curl (barra)',
     muscleGroups: ['Antebrazo'],
     equipment: 'Barra',
@@ -3685,7 +4186,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Minimiza ayuda de bíceps',
   },
   {
-    id: 'ex_410',
+    id: 'ex_465',
     name: 'Wrist roller (bar + cuerda + disco)',
     muscleGroups: ['Antebrazo'],
     equipment: 'Barra/cilindro',
@@ -3694,7 +4195,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Se enrolla y desenrolla peso',
   },
   {
-    id: 'ex_411',
+    id: 'ex_466',
     name: 'Barbell reverse curl',
     muscleGroups: ['Antebrazo'],
     equipment: 'Barra',
@@ -3703,7 +4204,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Brachiorradial + extensores',
   },
   {
-    id: 'ex_412',
+    id: 'ex_467',
     name: 'Barbell hammer curl (barra neutra)',
     muscleGroups: ['Antebrazo'],
     equipment: 'Barra especial',
@@ -3712,7 +4213,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Aporta trabajo antebrazo',
   },
   {
-    id: 'ex_413',
+    id: 'ex_468',
     name: 'Radial deviation barbell (lado pulgar)',
     muscleGroups: ['Antebrazo'],
     equipment: 'Barra',
@@ -3721,7 +4222,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Levantar pulgar hacia arriba',
   },
   {
-    id: 'ex_414',
+    id: 'ex_469',
     name: 'Ulnar deviation barbell (lado meñique)',
     muscleGroups: ['Antebrazo'],
     equipment: 'Barra',
@@ -3730,7 +4231,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Levantar lado meñique',
   },
   {
-    id: 'ex_415',
+    id: 'ex_470',
     name: 'Dumbbell wrist curl',
     muscleGroups: ['Antebrazo'],
     equipment: 'Mancuernas',
@@ -3739,7 +4240,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Similar a barra, unilateral',
   },
   {
-    id: 'ex_416',
+    id: 'ex_471',
     name: 'Dumbbell reverse wrist curl',
     muscleGroups: ['Antebrazo'],
     equipment: 'Mancuernas',
@@ -3748,7 +4249,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Extensores antebrazo',
   },
   {
-    id: 'ex_417',
+    id: 'ex_472',
     name: 'Single-arm wrist curl (de pie)',
     muscleGroups: ['Antebrazo'],
     equipment: 'Mancuernas',
@@ -3757,7 +4258,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Control una mano cada vez',
   },
   {
-    id: 'ex_418',
+    id: 'ex_473',
     name: 'Single-arm reverse wrist curl (de pie)',
     muscleGroups: ['Antebrazo'],
     equipment: 'Mancuernas',
@@ -3766,7 +4267,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Extensores unilateral',
   },
   {
-    id: 'ex_419',
+    id: 'ex_474',
     name: 'DB pronation/supination',
     muscleGroups: ['Antebrazo'],
     equipment: 'Mancuernas',
@@ -3775,7 +4276,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Rotar mano palma arriba/abajo',
   },
   {
-    id: 'ex_420',
+    id: 'ex_475',
     name: 'Hammer curl',
     muscleGroups: ['Antebrazo'],
     equipment: 'Mancuernas',
@@ -3784,7 +4285,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Brachiorradial + flexores',
   },
   {
-    id: 'ex_421',
+    id: 'ex_476',
     name: 'Zottman curl',
     muscleGroups: ['Antebrazo'],
     equipment: 'Mancuernas',
@@ -3793,7 +4294,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Subes supino, bajas prono',
   },
   {
-    id: 'ex_422',
+    id: 'ex_477',
     name: 'DB radial/ulnar deviation',
     muscleGroups: ['Antebrazo'],
     equipment: 'Mancuernas',
@@ -3802,7 +4303,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Variante unilateral ligera',
   },
   {
-    id: 'ex_423',
+    id: 'ex_478',
     name: 'Farmer\'s walk (DB)',
     muscleGroups: ['Antebrazo'],
     equipment: 'Mancuernas',
@@ -3811,7 +4312,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Gran estímulo de agarre',
   },
   {
-    id: 'ex_424',
+    id: 'ex_479',
     name: 'Suitcase carry (una mano)',
     muscleGroups: ['Antebrazo'],
     equipment: 'Mancuernas',
@@ -3820,7 +4321,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Estabilidad lateral + agarre',
   },
   {
-    id: 'ex_425',
+    id: 'ex_480',
     name: 'Plate pinch hold',
     muscleGroups: ['Antebrazo'],
     equipment: 'Discos',
@@ -3829,7 +4330,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Pellizcar discos con dedos',
   },
   {
-    id: 'ex_426',
+    id: 'ex_481',
     name: 'Plate curl (agarre borde)',
     muscleGroups: ['Antebrazo'],
     equipment: 'Discos',
@@ -3838,7 +4339,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Sujeta disco por borde',
   },
   {
-    id: 'ex_427',
+    id: 'ex_482',
     name: 'Cable wrist curl',
     muscleGroups: ['Antebrazo'],
     equipment: 'Polea',
@@ -3847,7 +4348,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Tensión continua',
   },
   {
-    id: 'ex_428',
+    id: 'ex_483',
     name: 'Cable reverse wrist curl',
     muscleGroups: ['Antebrazo'],
     equipment: 'Polea',
@@ -3856,7 +4357,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Extensores antebrazo',
   },
   {
-    id: 'ex_429',
+    id: 'ex_484',
     name: 'Standing cable wrist curl (codos 90°)',
     muscleGroups: ['Antebrazo'],
     equipment: 'Polea',
@@ -3865,7 +4366,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Usado en rutinas de antebrazo',
   },
   {
-    id: 'ex_430',
+    id: 'ex_485',
     name: 'Reverse cable curl',
     muscleGroups: ['Antebrazo'],
     equipment: 'Polea',
@@ -3874,7 +4375,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Brachiorradial + extensores',
   },
   {
-    id: 'ex_431',
+    id: 'ex_486',
     name: 'Rope hammer cable curl',
     muscleGroups: ['Antebrazo'],
     equipment: 'Polea',
@@ -3883,7 +4384,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Similar a hammer curl',
   },
   {
-    id: 'ex_432',
+    id: 'ex_487',
     name: 'Cable radial/ulnar deviation',
     muscleGroups: ['Antebrazo'],
     equipment: 'Polea',
@@ -3892,7 +4393,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Variación menos común',
   },
   {
-    id: 'ex_433',
+    id: 'ex_488',
     name: 'Wrist curl machine',
     muscleGroups: ['Antebrazo'],
     equipment: 'Máquina',
@@ -3901,7 +4402,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Versión guiada de wrist curl',
   },
   {
-    id: 'ex_434',
+    id: 'ex_489',
     name: 'Reverse wrist curl machine',
     muscleGroups: ['Antebrazo'],
     equipment: 'Máquina',
@@ -3910,7 +4411,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Extensores guiados',
   },
   {
-    id: 'ex_435',
+    id: 'ex_490',
     name: 'Grippers (hand gripper)',
     muscleGroups: ['Antebrazo'],
     equipment: 'Gripper',
@@ -3919,7 +4420,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Cerrar y mantener, fuerza de agarre',
   },
   {
-    id: 'ex_436',
+    id: 'ex_491',
     name: 'Captains of Crush / heavy grippers',
     muscleGroups: ['Antebrazo'],
     equipment: 'Gripper',
@@ -3928,7 +4429,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Para fuerza máxima',
   },
   {
-    id: 'ex_437',
+    id: 'ex_492',
     name: 'Rubber band finger extension',
     muscleGroups: ['Antebrazo'],
     equipment: 'Banda',
@@ -3937,7 +4438,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Trabaja extensores de dedos',
   },
   {
-    id: 'ex_438',
+    id: 'ex_493',
     name: 'Rice bucket training',
     muscleGroups: ['Antebrazo'],
     equipment: 'Cubeta arroz',
@@ -3946,7 +4447,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Multidireccional, rehab/agarre',
   },
   {
-    id: 'ex_439',
+    id: 'ex_494',
     name: 'Battle ropes (prono grip)',
     muscleGroups: ['Antebrazo'],
     equipment: 'Cuerdas',
@@ -3955,7 +4456,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Brachiorradial y agarre',
   },
   {
-    id: 'ex_440',
+    id: 'ex_495',
     name: 'Thick bar / Fat Gripz holds',
     muscleGroups: ['Antebrazo'],
     equipment: 'Barra + grips',
@@ -3964,7 +4465,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mayor dificultad de agarre',
   },
   {
-    id: 'ex_441',
+    id: 'ex_496',
     name: 'Deadlift (overhand, sin straps)',
     muscleGroups: ['Antebrazo'],
     equipment: 'Barra',
@@ -3973,7 +4474,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mucha carga en agarre',
   },
   {
-    id: 'ex_442',
+    id: 'ex_497',
     name: 'Rack pull holds',
     muscleGroups: ['Antebrazo'],
     equipment: 'Barra',
@@ -3982,7 +4483,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Solo sostener peso pesado',
   },
   {
-    id: 'ex_443',
+    id: 'ex_498',
     name: 'Towel farmer\'s walk',
     muscleGroups: ['Antebrazo'],
     equipment: 'Mancuernas + toallas',
@@ -3991,7 +4492,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Aún más exigente para agarre',
   },
   {
-    id: 'ex_444',
+    id: 'ex_499',
     name: 'Crunch',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso corporal',
@@ -4000,7 +4501,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Recto abdominal superior',
   },
   {
-    id: 'ex_445',
+    id: 'ex_500',
     name: 'Sit-up',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso corporal',
@@ -4009,7 +4510,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Más cadera/iliopsoas',
   },
   {
-    id: 'ex_446',
+    id: 'ex_501',
     name: 'Curl-up (McGill)',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso corporal',
@@ -4018,7 +4519,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Variante protectora de columna',
   },
   {
-    id: 'ex_447',
+    id: 'ex_502',
     name: 'Reverse crunch',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso corporal',
@@ -4027,7 +4528,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Parte inferior del recto',
   },
   {
-    id: 'ex_448',
+    id: 'ex_503',
     name: 'Hip raise',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso corporal',
@@ -4036,7 +4537,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Elevar cadera, no sólo piernas',
   },
   {
-    id: 'ex_449',
+    id: 'ex_504',
     name: 'Bicycle crunch',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso corporal',
@@ -4045,7 +4546,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Recto y oblicuos',
   },
   {
-    id: 'ex_450',
+    id: 'ex_505',
     name: 'V-up / Jackknife',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso corporal',
@@ -4054,7 +4555,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Brazos y piernas se encuentran',
   },
   {
-    id: 'ex_451',
+    id: 'ex_506',
     name: 'Hollow body hold',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso corporal',
@@ -4063,7 +4564,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Transverso + recto',
   },
   {
-    id: 'ex_452',
+    id: 'ex_507',
     name: 'Dead bug',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso corporal',
@@ -4072,7 +4573,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Patrón contralateral controlado',
   },
   {
-    id: 'ex_453',
+    id: 'ex_508',
     name: 'Leg raise (suelo)',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso corporal',
@@ -4081,7 +4582,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Cuidado con arco lumbar',
   },
   {
-    id: 'ex_454',
+    id: 'ex_509',
     name: 'Hanging knee raise',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso corporal',
@@ -4090,7 +4591,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Rodillas al pecho colgado',
   },
   {
-    id: 'ex_455',
+    id: 'ex_510',
     name: 'Hanging leg raise',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso corporal',
@@ -4099,7 +4600,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Piernas rectas, muy demandante',
   },
   {
-    id: 'ex_456',
+    id: 'ex_511',
     name: 'Toes-to-bar',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso corporal',
@@ -4108,7 +4609,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Pies a la barra; avanzado',
   },
   {
-    id: 'ex_457',
+    id: 'ex_512',
     name: 'Ab wheel rollout (rueda/barra)',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso corporal',
@@ -4117,7 +4618,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Muy exigente para core',
   },
   {
-    id: 'ex_458',
+    id: 'ex_513',
     name: 'Plank',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso corporal',
@@ -4126,7 +4627,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Plancha frontal clásica',
   },
   {
-    id: 'ex_459',
+    id: 'ex_514',
     name: 'Side plank',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso corporal',
@@ -4135,7 +4636,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Oblicuos/transverso',
   },
   {
-    id: 'ex_460',
+    id: 'ex_515',
     name: 'Copenhagen plank',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso corporal',
@@ -4144,7 +4645,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Apoyando pierna superior',
   },
   {
-    id: 'ex_461',
+    id: 'ex_516',
     name: 'Bird dog',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso corporal',
@@ -4153,7 +4654,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Core + erectores',
   },
   {
-    id: 'ex_462',
+    id: 'ex_517',
     name: 'Mountain climber',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso corporal',
@@ -4162,7 +4663,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Core + cardio',
   },
   {
-    id: 'ex_463',
+    id: 'ex_518',
     name: 'Russian twist (BW)',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso corporal',
@@ -4171,7 +4672,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Oblicuos',
   },
   {
-    id: 'ex_464',
+    id: 'ex_519',
     name: 'Hip dips (plank)',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso corporal',
@@ -4180,7 +4681,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Oblicuos',
   },
   {
-    id: 'ex_465',
+    id: 'ex_520',
     name: 'Sit-up en banco declinado',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso corporal',
@@ -4189,7 +4690,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mayor ROM/resistencia',
   },
   {
-    id: 'ex_466',
+    id: 'ex_521',
     name: 'Crunch en banco declinado',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso corporal',
@@ -4198,7 +4699,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Más difícil que en suelo',
   },
   {
-    id: 'ex_467',
+    id: 'ex_522',
     name: 'Crunch en fitball',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso corporal',
@@ -4207,7 +4708,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Más ROM y estabilidad',
   },
   {
-    id: 'ex_468',
+    id: 'ex_523',
     name: 'Oblique crunch (lateral)',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso corporal',
@@ -4216,7 +4717,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Foco oblicuos',
   },
   {
-    id: 'ex_469',
+    id: 'ex_524',
     name: 'Hanging windshield wipers',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso corporal',
@@ -4225,7 +4726,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Muy avanzado',
   },
   {
-    id: 'ex_470',
+    id: 'ex_525',
     name: 'Dragon flag',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso corporal',
@@ -4234,7 +4735,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Nivel muy alto',
   },
   {
-    id: 'ex_471',
+    id: 'ex_526',
     name: 'Weighted crunch (disco/DB)',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso adicional',
@@ -4243,7 +4744,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Con disco o DB sobre pecho',
   },
   {
-    id: 'ex_472',
+    id: 'ex_527',
     name: 'DB crunch (MuscleWiki)',
     muscleGroups: ['Abdomen'],
     equipment: 'Mancuerna',
@@ -4252,7 +4753,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'DB sobre clavícula',
   },
   {
-    id: 'ex_473',
+    id: 'ex_528',
     name: 'Weighted sit-up',
     muscleGroups: ['Abdomen'],
     equipment: 'Mancuerna/barra',
@@ -4261,7 +4762,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Carga en pecho o overhead',
   },
   {
-    id: 'ex_474',
+    id: 'ex_529',
     name: 'Medicine ball sit-up/throw',
     muscleGroups: ['Abdomen'],
     equipment: 'Med ball',
@@ -4270,7 +4771,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Lanzando balón al final',
   },
   {
-    id: 'ex_475',
+    id: 'ex_530',
     name: 'Weighted Russian twist',
     muscleGroups: ['Abdomen'],
     equipment: 'Mancuerna/med ball',
@@ -4279,7 +4780,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Mayor carga oblicuos',
   },
   {
-    id: 'ex_476',
+    id: 'ex_531',
     name: 'DB side bend',
     muscleGroups: ['Abdomen'],
     equipment: 'Mancuerna',
@@ -4288,7 +4789,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Oblicuos; no abusar de peso',
   },
   {
-    id: 'ex_477',
+    id: 'ex_532',
     name: 'DB overhead side bend',
     muscleGroups: ['Abdomen'],
     equipment: 'Mancuerna',
@@ -4297,7 +4798,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Carga overhead, más palanca',
   },
   {
-    id: 'ex_478',
+    id: 'ex_533',
     name: 'Weighted plank',
     muscleGroups: ['Abdomen'],
     equipment: 'Peso adicional',
@@ -4306,7 +4807,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Aumenta demanda sin cambiar forma',
   },
   {
-    id: 'ex_479',
+    id: 'ex_534',
     name: 'Renegade row',
     muscleGroups: ['Abdomen'],
     equipment: 'Mancuernas',
@@ -4315,7 +4816,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Core + dorsal',
   },
   {
-    id: 'ex_480',
+    id: 'ex_535',
     name: 'Landmine rotation',
     muscleGroups: ['Abdomen'],
     equipment: 'Barra + landmine',
@@ -4324,7 +4825,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Girando barra en arco',
   },
   {
-    id: 'ex_481',
+    id: 'ex_536',
     name: 'Cable crunch (kneeling)',
     muscleGroups: ['Abdomen'],
     equipment: 'Polea',
@@ -4333,7 +4834,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Muy popular para recto',
   },
   {
-    id: 'ex_482',
+    id: 'ex_537',
     name: 'Standing cable crunch',
     muscleGroups: ['Abdomen'],
     equipment: 'Polea',
@@ -4342,7 +4843,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'De pie, tirando hacia abajo',
   },
   {
-    id: 'ex_483',
+    id: 'ex_538',
     name: 'Rope overhead crunch',
     muscleGroups: ['Abdomen'],
     equipment: 'Polea',
@@ -4351,7 +4852,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Brazos más extendidos',
   },
   {
-    id: 'ex_484',
+    id: 'ex_539',
     name: 'Cable reverse crunch (lying)',
     muscleGroups: ['Abdomen'],
     equipment: 'Polea',
@@ -4360,7 +4861,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Similar a leg raise con cable',
   },
   {
-    id: 'ex_485',
+    id: 'ex_540',
     name: 'Cable woodchopper high-to-low',
     muscleGroups: ['Abdomen'],
     equipment: 'Polea',
@@ -4369,7 +4870,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Oblicuos/transverso',
   },
   {
-    id: 'ex_486',
+    id: 'ex_541',
     name: 'Cable woodchopper low-to-high',
     muscleGroups: ['Abdomen'],
     equipment: 'Polea',
@@ -4378,7 +4879,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Variante opuesta',
   },
   {
-    id: 'ex_487',
+    id: 'ex_542',
     name: 'Pallof press (standing)',
     muscleGroups: ['Abdomen'],
     equipment: 'Polea/banda',
@@ -4387,7 +4888,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Resistir giro al extender brazos',
   },
   {
-    id: 'ex_488',
+    id: 'ex_543',
     name: 'Half-kneeling Pallof press',
     muscleGroups: ['Abdomen'],
     equipment: 'Polea/banda',
@@ -4396,7 +4897,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Más estabilidad cadera',
   },
   {
-    id: 'ex_489',
+    id: 'ex_544',
     name: 'Cable side bend',
     muscleGroups: ['Abdomen'],
     equipment: 'Polea',
@@ -4405,7 +4906,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Oblicuos uni-laterales',
   },
   {
-    id: 'ex_490',
+    id: 'ex_545',
     name: 'Standing cable lift/chop',
     muscleGroups: ['Abdomen'],
     equipment: 'Polea',
@@ -4414,7 +4915,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Variantes de chop/lift',
   },
   {
-    id: 'ex_491',
+    id: 'ex_546',
     name: 'Machine crunch (seated)',
     muscleGroups: ['Abdomen'],
     equipment: 'Máquina',
@@ -4423,7 +4924,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Empuje con tronco contra resistencia',
   },
   {
-    id: 'ex_492',
+    id: 'ex_547',
     name: 'Machine crunch (kneeling plate-loaded)',
     muscleGroups: ['Abdomen'],
     equipment: 'Máquina',
@@ -4432,7 +4933,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Versión pesada',
   },
   {
-    id: 'ex_493',
+    id: 'ex_548',
     name: 'Machine oblique twist',
     muscleGroups: ['Abdomen'],
     equipment: 'Máquina',
@@ -4441,7 +4942,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Rotación controlada, oblicuos',
   },
   {
-    id: 'ex_494',
+    id: 'ex_549',
     name: 'Roman chair sit-up',
     muscleGroups: ['Abdomen'],
     equipment: 'Máquina/banco',
@@ -4450,7 +4951,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Gran ROM, muy duro',
   },
   {
-    id: 'ex_495',
+    id: 'ex_550',
     name: 'Captain\'s chair leg raise',
     muscleGroups: ['Abdomen'],
     equipment: 'Máquina',
@@ -4459,7 +4960,7 @@ export const EXERCISE_DATABASE: Exercise[] = [
     description: 'Rodillas/piernas al frente',
   },
   {
-    id: 'ex_496',
+    id: 'ex_551',
     name: 'Hanging leg raise machine (support)',
     muscleGroups: ['Abdomen'],
     equipment: 'Máquina',
@@ -4484,6 +4985,7 @@ export const EQUIPMENT_CATEGORIES = [
 // Muscle categories
 export const MUSCLE_CATEGORIES = [
   'Espalda',
+  'Pecho',
   'Bíceps',
   'Tríceps',
   'Glúteo',

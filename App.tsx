@@ -97,8 +97,10 @@ function App() {
       if (savedEx) {
         let savedExercises = JSON.parse(savedEx);
         savedExercises = migrateExercises(savedExercises);
-        const missingDefaults = INITIAL_EXERCISES.filter(def => !savedExercises.some((s: Exercise) => s.id === def.id));
-        setExercises([...savedExercises, ...missingDefaults]);
+        // Keep only custom exercises (not from INITIAL_EXERCISES)
+        const customExercises = savedExercises.filter((ex: Exercise) => !ex.id.startsWith('ex_'));
+        // Merge: all predefined exercises + user's custom exercises
+        setExercises([...INITIAL_EXERCISES, ...customExercises]);
       } else {
         setExercises(INITIAL_EXERCISES);
       }
@@ -146,8 +148,10 @@ function App() {
         if (data[KEYS.EXERCISES]) {
           let savedEx = data[KEYS.EXERCISES];
           savedEx = migrateExercises(savedEx);
-          const missingDefaults = INITIAL_EXERCISES.filter(def => !savedEx.some((s: Exercise) => s.id === def.id));
-          setExercises([...savedEx, ...missingDefaults]);
+          // Keep only custom exercises (not from INITIAL_EXERCISES)
+          const customExercises = savedEx.filter((ex: Exercise) => !ex.id.startsWith('ex_'));
+          // Merge: all predefined exercises + user's custom exercises
+          setExercises([...INITIAL_EXERCISES, ...customExercises]);
         }
         if (data[KEYS.ROUTINES]) setRoutines(data[KEYS.ROUTINES]);
         if (data[KEYS.HISTORY]) setHistory(data[KEYS.HISTORY]);

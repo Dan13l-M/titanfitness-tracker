@@ -16,6 +16,7 @@ interface ExerciseLibraryProps {
 
 const MUSCLE_GROUPS = [
   'Espalda',
+  'Pecho',
   'Bíceps',
   'Tríceps',
   'Glúteo',
@@ -41,6 +42,7 @@ const EQUIPMENT_GROUPS = [
 
 const CATEGORY_ICONS: Record<string, string> = {
   'Espalda': '🦅',
+  'Pecho': '🎯',
   'Bíceps': '💪',
   'Tríceps': '🦾',
   'Glúteo': '🍑',
